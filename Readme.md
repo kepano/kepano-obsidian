@@ -22,11 +22,13 @@ I use very few folders. I keep the root of my vault directory for things that I 
 
 ## Categories and tagging
 
-I primarily use the category property, e.g. `category: [[Movies]]` to organize and navigate my vault. Some rules I follow:
+I primarily use the category property, e.g. `category: [[Movies]]` to organize and navigate my vault. Some rules I personally follow:
 
 - Always pluralize categories and tags
 - Use `YYYY-MM-DD` everywhere
-- 
+- Never use folders for organization
+- Single vault for everything
+- Avoid non-standard Markdown
 
 ## Rating system
 
