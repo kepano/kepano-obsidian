@@ -26,7 +26,7 @@ Some of my templates depend on plugins I use:
 I use very few folders. My personal notes such as journal entries are primarily in the root. Folders are for everything else. The folders I use:
 
 - **Attachments** for images, PDFs, etc
-- **Clippings** for articles and other pages captured with my [web clipper](https://stephango.com/obsidian-web-clipper)
+- **Clippings** for articles and other pages captured with my [web clipper](https://stephango.com/obsidian-web-clipper), exclusively written by other people
 - **Daily** for my daily notes, all in `YYYY-MM-DD.md` format
 - **References** for anything that refers to something that exists outside of my vault, e.g. books, movies, places, people, podcasts, etc.
 - **Templates** for templates. This is actually nested under "Meta" in my personal vault, but I've moved it to the top-level for clarity. Meta also contains my personal style guide and other random things that are about the vault.
