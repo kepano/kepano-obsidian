@@ -36,7 +36,7 @@ I use very few folders. My personal notes such as journal entries are primarily 
 
 The `.obsidian/types.json` file shows which properties are assigned to which types. 
 
-- Most of my properties try to be useful and reusable across categories
+- Most of my properties attempt to be reusable across categories
 - Many properties have short names e.g. `start` instead of `startdate`
 - I use the `list` type more than the `text` type for many properties, because I find it useful to be able to enter multiple links
 
