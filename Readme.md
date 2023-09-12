@@ -1,4 +1,9 @@
-An Obsidian vault containing my vault structure, as well as my templates and settings. See also [my theme Minimal](https://github.com/kepano/obsidian-minimal).
+An Obsidian vault containing my vault structure, as well as my templates and settings. 
+
+## See also
+
+- My theme: [Minimal](https://github.com/kepano/obsidian-minimal) , more at [minimal.guide](https://minimal.guide)
+- My [web clipper](https://stephango.com/obsidian-web-clipper) for saving articles and pages on the web
 
 ## Plugins
 
@@ -13,7 +18,7 @@ Some of my templates depend on plugins I use:
 I use very few folders. My personal notes such as journal entries are primarily in the root of the directory. Folders are for everything else. These are the folders I use:
 
 - **Attachments** for images, PDFs, etc
-- **Clippings** for articles and other pages captured with my [Web Clipper](https://stephango.com/obsidian-web-clipper)
+- **Clippings** for articles and other pages captured with my [web clipper](https://stephango.com/obsidian-web-clipper)
 - **Daily** for my daily notes, all in `YYYY-MM-DD.md` format
 - **References** for anything that refers to something that exists outside of my vault, e.g. books, movies, places, people, podcasts, etc.
 - **Templates** for templates. This is actually nested under "Meta" in my personal vault, but I've moved it to the top-level for clarity. Meta also contains my personal style guide and other random things that are about the vault.
