@@ -2,7 +2,7 @@ An Obsidian vault containing my vault structure, as well as my templates and set
 
 ## See also
 
-- My theme: [Minimal](https://github.com/kepano/obsidian-minimal) , more at [minimal.guide](https://minimal.guide)
+- My theme: [Minimal](https://github.com/kepano/obsidian-minimal), more at [minimal.guide](https://minimal.guide)
 - My [web clipper](https://stephango.com/obsidian-web-clipper) for saving articles and pages on the web
 
 ## Plugins
