@@ -10,7 +10,7 @@ Some of my templates depend on plugins I use:
 
 ## Folder structure
 
-I use very few folders. I keep the root of my vault directory for things that I have created, such as journal entries
+I use very few folders. My personal notes such as journal entries are primarily in the root of the directory. Folders are for everything else. These are the folders I use:
 
 - **Attachments** for images, PDFs, etc
 - **Clippings** for articles and other pages captured with my [Web Clipper](https://stephango.com/obsidian-web-clipper)
