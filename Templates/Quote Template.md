@@ -1,7 +1,8 @@
 ---
 attribution: []
-source: 
-created: {{date}}
+url: 
+created:
+  "{ date }": 
 tags:
   - quotes
 topics: []

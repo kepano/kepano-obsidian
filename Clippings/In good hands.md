@@ -3,7 +3,7 @@ category:
   - "[[Clippings]]"
 author:
   - "[[Steph Ango]]"
-source: https://stephango.com/in-good-hands
+url: https://stephango.com/in-good-hands
 clipped: 2023-09-12
 published: 2023-08-06
 topics: 
