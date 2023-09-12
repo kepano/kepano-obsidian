@@ -4,8 +4,9 @@ category:
 tags:
   - people
 birthday: 
-company: []
-created: {{date}}
+org: []
+created:
+  "{ date }":
 ---
 ## Meetings
 
