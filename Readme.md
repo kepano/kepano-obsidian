@@ -1,4 +1,6 @@
-An [Obsidian](https://obsidian.md/) vault containing the structure of my notes, as well as my templates and settings. To learn more about how I use Obsidian, visit my website [stephango.com](https://stephango.com/topics/obsidian/).
+My personal [Obsidian](https://obsidian.md/) vault structure. A bottom-up approach to note-taking and organizing the things I am interested in.
+
+To learn more about how I use Obsidian, visit my website [stephango.com](https://stephango.com/topics/obsidian/).
 
 ## Get started
 
