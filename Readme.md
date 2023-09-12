@@ -6,12 +6,14 @@ An [Obsidian](https://obsidian.md/) vault containing my vault structure, as well
 2. Unzip the .zip file to a folder of your choosing
 3. Open Obsidian and create a new vault pointing to that folder
 
-## See also
+## Vault structure
+
+### Theme and related tools
 
 - My theme: [Minimal](https://github.com/kepano/obsidian-minimal), more at [minimal.guide](https://minimal.guide)
 - My [web clipper](https://stephango.com/obsidian-web-clipper) for saving articles and pages on the web
 
-## Plugins
+### Plugins
 
 Some of my templates depend on plugins I use:
 
@@ -19,7 +21,7 @@ Some of my templates depend on plugins I use:
 - [Periodic notes](https://github.com/liamcain/obsidian-periodic-notes) for my daily notes
 - [Leaflet](https://github.com/javalent/obsidian-leaflet) for maps
 
-## Folder structure
+### Folders
 
 I use very few folders. My personal notes such as journal entries are primarily in the root of the directory. Folders are for everything else. These are the folders I use:
 
