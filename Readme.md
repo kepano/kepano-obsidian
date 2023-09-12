@@ -1,4 +1,4 @@
-An Obsidian vault containing my vault structure, as well as my templates and settings.
+An [Obsidian](https://obsidian.md/) vault containing my vault structure, as well as my templates and settings.
 
 ## Get started
 
