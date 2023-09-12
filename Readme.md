@@ -18,7 +18,7 @@ An [Obsidian](https://obsidian.md/) vault containing the structure of my notes, 
 Some of my templates depend on plugins I use:
 
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview) for many database views
-- [Periodic notes](https://github.com/liamcain/obsidian-periodic-notes) and [Calendar](https://github.com/liamcain/obsidian-calendar-plugin) for my daily notes
+- [Periodic notes](https://github.com/liamcain/obsidian-periodic-notes) and [Calendar](https://github.com/liamcain/obsidian-calendar-plugin) for daily notes
 - [Leaflet](https://github.com/javalent/obsidian-leaflet) for maps
 
 ### Folders
