@@ -47,7 +47,6 @@
     "start": "date",
     "shares": "number",
     "variety": "text",
-    "ratingImdb": "number",
     "price": "number",
     "author": "multitext"
   }

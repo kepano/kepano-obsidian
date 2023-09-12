@@ -5,13 +5,10 @@ cover:
 genre: []
 director: 
 cast: []
-ratingImdb: 
 rating: 
 year: 
-last:
-  "{ date }": 
+last: {{date}}
 imdbId: 
-scoreRT: 
 via: 
 tags:
   - movies

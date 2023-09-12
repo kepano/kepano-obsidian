@@ -3,7 +3,7 @@ category:
   - "[[Trips]]"
 start: 
 end: 
-loc: 
+location: 
 tags:
   - trips
 ---

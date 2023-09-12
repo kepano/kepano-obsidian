@@ -1,6 +1,8 @@
 # obsidian
 .obsidian/workspace.json
 .obsidian/themes
+.obsidian/plugins
+.obsidian/community-plugins.json
 
 # Exclude macOS Finder (System Explorer) View States
 .DS_Store

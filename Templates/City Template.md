@@ -8,9 +8,8 @@ tags:
   - cities
 location: 
 rating: 
-created:
-  "{ date }": 
-last: ""
+created: {{date}}
+last: 
 ---
 ## Trips
 

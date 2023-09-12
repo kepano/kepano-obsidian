@@ -5,9 +5,8 @@ tags:
   - note
   - journal
   - meditation
-created:
-  "{ date }": 
-loc: []
+created: {{date}}
+location: []
 topics: []
 ---
 

@@ -1,8 +1,9 @@
 ---
 category:
   - "[[Places]]"
-type: "[[Restaurants]]"
-loc: 
+type:
+  - "[[Restaurants]]"
+location: 
 rating: 
 created: {{date}}
 last: {{date}}

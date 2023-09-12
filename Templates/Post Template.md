@@ -5,8 +5,7 @@ tags:
   - posts
 author: "[[Me]]"
 url: 
-created:
-  "{ date }": 
+created: {{date}}
 published: 
 topics:
   - ""

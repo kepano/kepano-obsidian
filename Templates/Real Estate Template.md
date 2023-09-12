@@ -6,13 +6,12 @@ tags:
 type: []
 address: 
 rating: 
-created:
-  "{ date:YYYY-MM-DD }": 
+created: "{{date}}" 
 url: 
 year: 
 price: 
 sqft: 
 lotsqft: 
-loc: []
+location: []
 status:
 ---

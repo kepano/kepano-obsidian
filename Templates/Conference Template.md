@@ -5,7 +5,7 @@ type: "[[Conferences]]"
 series: 
 start: 
 end: 
-loc: 
+location: 
 tags:
   - events
   - conferences

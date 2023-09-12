@@ -4,7 +4,6 @@ category:
 genre: []
 year: 
 cast: []
-ratingImdb: 
 rating: 
 created: {{date}}
 last: {{date}}
