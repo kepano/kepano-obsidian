@@ -29,7 +29,8 @@ I use very few folders. My personal notes such as journal entries are primarily 
 - **References** for anything that refers to something that exists outside of my vault, e.g. books, movies, places, people, podcasts, etc.
 - **Templates** for templates. This is actually nested under "Meta" in my personal vault, but I've moved it to the top-level for clarity. Meta also contains my personal style guide and other random things that are about the vault.
 
-## Templates and metadata
+## Style guide
+### Templates and metadata
 
 The `.obsidian/types.json` file shows which properties are assigned to which types. 
 
@@ -37,7 +38,7 @@ The `.obsidian/types.json` file shows which properties are assigned to which typ
 - Many properties have short names e.g. `start` instead of `startdate`
 - I use the `list` type more than the `text` type for many properties, because I find it useful to be able to enter multiple links
 
-## Categories and tagging
+### Categories and tagging
 
 I primarily use the category property, e.g. `category: [[Movies]]` to organize and navigate my vault. Some rules I personally follow:
 
@@ -47,7 +48,7 @@ I primarily use the category property, e.g. `category: [[Movies]]` to organize a
 - Single vault for everything
 - Avoid non-standard Markdown
 
-## Rating system
+### Rating system
 
 Anything with a `rating` uses an integer from 1 to 7
 
