@@ -1,14 +1,12 @@
 An Obsidian vault containing my vault structure, as well as my templates and settings. See also [my theme Minimal](https://github.com/kepano/obsidian-minimal).
 
-## Templates
+## Plugins
 
 Some of my templates depend on plugins I use:
 
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview) for many database views
 - [Periodic notes](https://github.com/liamcain/obsidian-periodic-notes) for my daily notes
 - [Leaflet](https://github.com/javalent/obsidian-leaflet) for maps
-
-The `.obsidian/types.json` file shows which properties are assigned to which types. Many have short names that are meant for me to remember, e.g. `start` instead of `startdate`.
 
 ## Folder structure
 
@@ -19,6 +17,10 @@ I use very few folders. I keep the root of my vault directory for things that I 
 - **Daily** for my daily notes, all in `YYYY-MM-DD.md` format
 - **References** for anything that refers to something that exists outside of my vault, e.g. books, movies, places, people, podcasts, etc.
 - **Templates** for templates. This is actually nested under "Meta" in my personal vault, but I've moved it to the top-level for clarity. Meta also contains my personal style guide and other random things that are about the vault.
+
+## Templates and metadata
+
+The `.obsidian/types.json` file shows which properties are assigned to which types. Many have short names that are meant for me to remember, e.g. `start` instead of `startdate`.
 
 ## Categories and tagging
 
@@ -32,7 +34,7 @@ I primarily use the category property, e.g. `category: [[Movies]]` to organize a
 
 ## Rating system
 
-Anything with a `rating` is a number that goes from 1 to 7
+Anything with a `rating` uses an integer from 1 to 7
 
   - 7 — **Perfect**, must try, life-changing, go out of your way to seek this out
   - 6 — **Excellent**, worth repeating
