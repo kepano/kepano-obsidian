@@ -20,7 +20,11 @@ I use very few folders. I keep the root of my vault directory for things that I 
 
 ## Templates and metadata
 
-The `.obsidian/types.json` file shows which properties are assigned to which types. Many have short names that are meant for me to remember, e.g. `start` instead of `startdate`.
+The `.obsidian/types.json` file shows which properties are assigned to which types. 
+
+- Most of my properties try to be useful and reusable across categories
+- Many properties have short names e.g. `start` instead of `startdate`
+- I use the `list` type more than the `text` type for many properties, because I find it useful to be able to enter multiple links
 
 ## Categories and tagging
 
@@ -31,7 +35,6 @@ I primarily use the category property, e.g. `category: [[Movies]]` to organize a
 - Never use folders for organization
 - Single vault for everything
 - Avoid non-standard Markdown
-- I use the `list` type more than the `text` type for many properties, because I find it useful to be able to enter multiple links
 
 ## Rating system
 
