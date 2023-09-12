@@ -1,4 +1,4 @@
-An [Obsidian](https://obsidian.md/) vault containing my vault structure, as well as my templates and settings. To learn more about how I use Obsidian, visit my website [stephanango.com](https://stephango.com/topics/obsidian/).
+An [Obsidian](https://obsidian.md/) vault containing my vault structure, as well as my templates and settings. To learn more about how I use Obsidian, visit my website [stephango.com](https://stephango.com/topics/obsidian/).
 
 ## Get started
 
