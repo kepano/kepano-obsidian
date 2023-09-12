@@ -8,6 +8,7 @@ company:
   - "[[Obsidian]]"
 created: 2023-09-12
 twitter: kepano
+url: https://stephango.com/
 ---
 ## Meetings
 

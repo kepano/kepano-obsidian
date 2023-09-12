@@ -31,6 +31,7 @@ I primarily use the category property, e.g. `category: [[Movies]]` to organize a
 - Never use folders for organization
 - Single vault for everything
 - Avoid non-standard Markdown
+- I use the `list` type more than the `text` type for many properties, because I find it useful to be able to enter multiple links
 
 ## Rating system
 
