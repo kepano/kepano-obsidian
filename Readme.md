@@ -46,8 +46,8 @@ I primarily use the category property, e.g. `category: [[Movies]]` to organize a
 
 - Always pluralize categories and tags
 - Use `YYYY-MM-DD` everywhere
+- Use a single vault for everything
 - Avoid folders for organization
-- Single vault for everything
 - Avoid non-standard Markdown
 
 ### Rating system
