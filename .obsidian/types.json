@@ -44,6 +44,7 @@
     "shares": "number",
     "variety": "text",
     "price": "number",
-    "author": "multitext"
+    "author": "multitext",
+    "published": "date"
   }
 }
