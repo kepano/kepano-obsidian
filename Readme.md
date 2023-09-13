@@ -32,7 +32,7 @@ The folders I use:
 - **Attachments** for images, PDFs, etc.
 - **Clippings** for articles and other pages captured with my [web clipper](https://stephango.com/obsidian-web-clipper) written by other people.
 - **Daily** for my daily notes, all named `YYYY-MM-DD.md`.
-- **References** for anything that refers to something that exists outside of my vault, e.g. books, movies, places, people, podcasts, etc..
+- **References** for anything that refers to something that exists outside of my vault, e.g. books, movies, places, people, podcasts, etc.
 - **Templates** for templates. In my real personal vault the "Templates" folder is nested under "Meta" which also contains my personal style guide and other random notes about the vault.
 
 The following folders are not part of my personal system, but I have created them for the sake of clarity. The notes in these folders would be in the root of my personal vault:
