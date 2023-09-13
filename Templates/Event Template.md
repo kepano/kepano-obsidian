@@ -6,5 +6,5 @@ tags:
 type: 
 start: 
 end: 
-location:
+loc:
 ---

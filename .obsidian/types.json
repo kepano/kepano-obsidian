@@ -45,6 +45,8 @@
     "variety": "text",
     "price": "number",
     "author": "multitext",
-    "published": "date"
+    "published": "date",
+    "where": "multitext",
+    "loc": "multitext"
   }
 }

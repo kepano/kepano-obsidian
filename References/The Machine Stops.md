@@ -20,6 +20,8 @@ tags:
 
 ## Quotes
 
+Replace "accumulations" with "notifications"
+
 > There were buttons and switches everywhere — buttons to call for food for music, for clothing. There was the hot-bath button, by pressure of which a basin of (imitation) marble rose out of the floor, filled to the brim with a warm deodorized liquid. There was the cold-bath button. There was the button that produced literature. And there were of course the buttons by which she communicated with her friends. The room, though it contained nothing, was in touch with all that she cared for in the world
 > 
 > Vashti’s next move was to turn off the isolation switch, and all the accumulations of the last three minutes burst upon her. The room was filled with the noise of bells, and speaking-tubes. What was the new food like? Could she recommend it? Has she had any ideas lately? Might one tell her one’s own ideas? Would she make an engagement to visit the public nurseries at an early date? — say this day month. 

@@ -9,11 +9,12 @@ maxZoom:15
 height:50%
 ```
 
+## Places
 
 ```dataview
 table without id
 	file.link as Place,
-	location as Location,
+	loc as Location,
 	type as Type,
 	rating as Rating
 where

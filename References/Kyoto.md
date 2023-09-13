@@ -6,11 +6,15 @@ type:
 tags:
   - places
   - cities
-loc: 
-rating: 
-created: {{date}}
-last: 
+loc:
+  - "[[Japan]]"
 location:
+  - 35.021041
+  - 135.7556075
+rating: 
+created: 2023-09-12
+last: 
+where:
 ---
 ## Trips
 

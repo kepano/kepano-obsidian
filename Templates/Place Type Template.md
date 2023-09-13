@@ -12,11 +12,13 @@ defaultZoom: 3
 height: 50%
 ```
 
+## Places
+
 ```dataview
 table without id
 	file.link as Place,
 	rating as Rating,
-	location as Location
+	loc as Location
 where
 	contains(category, [[Places]]) and
 	contains(type, this.file.link)
