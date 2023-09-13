@@ -6,7 +6,7 @@ tags:
 id: places
 markerTag: places
 maxZoom:15
-height:50%
+height:400px
 ```
 
 ## Places

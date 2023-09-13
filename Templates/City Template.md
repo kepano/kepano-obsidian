@@ -33,7 +33,7 @@ minZoom: 10
 maxZoom: 20
 defaultZoom: 12
 linksTo: [[Kyoto]]
-height: 50%
+height: 400px
 coordinates: [[Kyoto]]
 ```
 

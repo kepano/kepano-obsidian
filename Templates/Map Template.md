@@ -9,6 +9,6 @@ minZoom: 10
 maxZoom: 20
 defaultZoom: 12
 linksTo: [[New York]]
-height: 50%
+height: 400px
 coordinates: [[New York]]
 ```
