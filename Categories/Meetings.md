@@ -1,6 +1,6 @@
 ---
 tags:
-  - databases
+  - categories
 ---
 ```dataview
 table without id

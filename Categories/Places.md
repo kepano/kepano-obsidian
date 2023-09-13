@@ -1,6 +1,6 @@
 ---
 tags:
-  - databases
+  - categories
 ---
 ```leaflet
 id: places

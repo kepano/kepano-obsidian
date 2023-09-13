@@ -1,17 +1,18 @@
 ---
 tags:
-  - databases
+  - categories
 ---
+
 ```dataview
 table without id
-	file.link as Game,
-	maker as Maker,
-	genre as Genre,
+	file.link as Book,
+	author as Author,
 	year as Year,
 	rating as Rating,
-	last as "Last played"
+	created as Added,
+	genre as Genre
 where
 	contains(category,this.file.link) and
 	!contains(file.name, "Template")
-sort last desc
+sort rating desc, date asc
 ```

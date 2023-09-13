@@ -1,7 +1,7 @@
 ---
 tags:
   - music
-  - databases
+  - categories
 ---
 
 ```dataview
