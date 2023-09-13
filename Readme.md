@@ -27,6 +27,8 @@ Some of my templates depend on plugins I use:
 
 I use very few folders. My personal notes are primarily in the root, these are my journal entries. Folders are for everything else. I do not use the file explorer much for navigation, instead I navigate mostly using the quick switcher or clicking links.
 
+If you want to use this vault as a starting point the **Categories** and **Templates** folders contain everything that you need.
+
 The folders I use:
 
 - **Attachments** for images, PDFs, etc.
@@ -35,12 +37,10 @@ The folders I use:
 - **References** for anything that refers to something that exists outside of my vault, e.g. books, movies, places, people, podcasts, etc.
 - **Templates** for templates. In my real personal vault the "Templates" folder is nested under "Meta" which also contains my personal style guide and other random notes about the vault.
 
-The following folders are not part of my personal system, but I have created them for the sake of clarity. The notes in these folders would be in the root of my personal vault:
+The folders I don't use, but have created here for the sake of clarity. The notes in these folders would be in the root of my personal vault:
 
 - **Categories** contains top-level overviews of notes per category (e.g. books, movies, podcasts, etc).
 - **Notes** contains example notes.
-
-If you want to use this vault as a starting point the **Categories** and **Templates** folders contain everything that you need.
 
 ## Style guide
 ### Templates and metadata
