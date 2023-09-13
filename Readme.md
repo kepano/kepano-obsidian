@@ -40,6 +40,8 @@ The following folders are not part of my personal system, but I have created the
 - **Categories** contains top-level overviews of notes per category (e.g. books, movies, podcasts, etc).
 - **Notes** contains example notes.
 
+If you want to use this vault as a starting point the **Categories** and **Templates** folders contain everything that you need.
+
 ## Style guide
 ### Templates and metadata
 
