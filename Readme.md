@@ -1,4 +1,4 @@
-My personal [Obsidian](https://obsidian.md/) vault structure. A bottom-up approach to note-taking and organizing the things I am interested in. This is not dogma, just my personal approach. Hopefully it can serve as inspiration, but do what works for you!
+My personal [Obsidian](https://obsidian.md/) vault structure. A bottom-up approach to note-taking and organizing things I am interested in. This is not dogma, just my personal approach. Hopefully it can serve as inspiration, but do what works for you!
 
 To learn more about how I use Obsidian, visit my website [stephango.com](https://stephango.com/topics/obsidian/).
 
