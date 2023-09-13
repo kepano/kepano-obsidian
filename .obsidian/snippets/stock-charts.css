@@ -9,14 +9,12 @@
 
   & .stock-card {
     position: relative;
-
     a {
       cursor: pointer;
       position: absolute;
       width: 100%;
       height: 100%;
     }
-
     &:hover .stock-card-inner {
       background-color: var(--background-primary);
     }
@@ -30,7 +28,6 @@
   border-radius: var(--radius-m);
   background-color: var(--background-primary);
 }
-
 .stock-chart {
   width: 100%;
   min-height: 340px;
@@ -41,12 +38,10 @@
   width: var(--line-width);
   margin: 0 auto;
 }
-
 .stock-financials {
   width: 100%;
   height: 800px;
 }
-
 .stock-card-inner {
   height: 94px;
   width: 270px;
