@@ -9,6 +9,7 @@ maxZoom:15
 height:50%
 ```
 
+
 ```dataview
 table without id file.link as Place, location as "Location", type as Type, rating as "Rating"
 from #places

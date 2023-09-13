@@ -1,15 +1,15 @@
 ---
 category:
   - "[[Books]]"
+author: []
 cover: 
 genre: []
-author: []
 length: 
 isbn: 
 isbn13: 
-topics: []
 year: 
 rating: 
+topics: []
 created: {{date}}
 last: 
 via: ""
