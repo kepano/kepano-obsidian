@@ -9,7 +9,7 @@ created: {{date}}
 last: {{date}}
 tags:
   - shows
-  - reference
+  - references
 ---
 ## [[{{date}}]]
 

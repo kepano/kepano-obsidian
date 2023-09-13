@@ -9,7 +9,7 @@ published:
 tags:
   - shows
   - episodes
-  - reference
+  - references
 ---
 ## [[{{date}}]]
 

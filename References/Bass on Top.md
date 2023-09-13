@@ -4,7 +4,7 @@ category:
 tags:
   - music
   - albums
-  - reference
+  - references
 genre:
   - "[[Jazz]]"
 artist: "[[Paul Chambers]]"

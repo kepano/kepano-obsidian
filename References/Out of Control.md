@@ -18,5 +18,5 @@ last: 2023-09-12
 rating: 7
 tags:
   - books
-  - reference
+  - references
 ---

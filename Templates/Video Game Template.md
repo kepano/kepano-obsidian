@@ -10,7 +10,7 @@ created: {{date}}
 last: {{date}}
 tags:
   - games
-  - reference
+  - references
 ---
 ## [[{{date}}]]
 

@@ -8,5 +8,5 @@ rating:
 last: {{date}}
 tags:
   - board-games
-  - reference
+  - references
 ---

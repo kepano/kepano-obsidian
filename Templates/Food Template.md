@@ -3,7 +3,7 @@ category:
   - "[[Food]]"
 tags:
   - food
-  - reference
+  - references
 maker: 
 rating: 
 price: 

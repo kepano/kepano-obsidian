@@ -12,7 +12,7 @@ imdbId:
 via: 
 tags:
   - movies
-  - reference
+  - references
 ---
 
 [[{{date}}]]

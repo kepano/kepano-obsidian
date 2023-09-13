@@ -3,6 +3,7 @@ tags:
   - databases
 ---
 ```dataview
-table from #events 
+table without id file.link as Event
+from #events 
 where !contains(file.name,"Template")
 ```
