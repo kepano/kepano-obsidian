@@ -37,8 +37,8 @@ The folders I use:
 
 The following folders are not part of my personal system, but I have created them for the sake of clarity. The notes in these folders would be in the root of my personal vault:
 
-- **Categories** are notes that serve as top level overviews of all my notes per catgory, which templates feed into. 
-- **Notes** are example notes.
+- **Categories** contains top-level overviews of notes per category (e.g. books, movies, podcasts, etc).
+- **Notes** contains example notes.
 
 ## Style guide
 ### Templates and metadata
