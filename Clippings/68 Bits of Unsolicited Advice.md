@@ -7,7 +7,7 @@ url: https://kk.org/thetechnium/68-bits-of-unsolicited-advice/
 tags:
   - clippings
   - advice
-created: 2023-09-13
+created: 2023-09-12
 published: 2020-04-28
 topics: []
 ---
