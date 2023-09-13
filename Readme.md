@@ -25,7 +25,9 @@ Some of my templates depend on plugins I use:
 
 ### Folders
 
-I use very few folders. My personal notes are primarily in the root, these are my journal entries. Folders are for everything else. I do not use the file explorer much for navigation. I primarily navigate using the quick switcher (`Cmd + O`). The folders I use:
+I use very few folders. My personal notes are primarily in the root, these are my journal entries. Folders are for everything else. I do not use the file explorer much for navigation, instead I navigate mostly using the quick switcher or clicking links.
+
+The folders I use:
 
 - **Attachments** for images, PDFs, etc
 - **Clippings** for articles and other pages captured with my [web clipper](https://stephango.com/obsidian-web-clipper) written by other people
