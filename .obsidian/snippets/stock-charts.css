@@ -1,0 +1,53 @@
+/* Stocks */
+.stock-cards {
+  margin: 2em 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 6px;
+  justify-content: center;
+
+  & .stock-card {
+    position: relative;
+
+    a {
+      cursor: pointer;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover .stock-card-inner {
+      background-color: var(--background-primary);
+    }
+  }
+}
+
+.stock-chart, .stock-financials, .stock-card-inner {
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background-color: var(--background-primary);
+}
+
+.stock-chart {
+  width: 100%;
+  min-height: 340px;
+  height: 40vh;
+  margin-bottom: 1em;
+}
+.stock-container {
+  width: var(--line-width);
+  margin: 0 auto;
+}
+
+.stock-financials {
+  width: 100%;
+  height: 800px;
+}
+
+.stock-card-inner {
+  height: 94px;
+  width: 270px;
+}

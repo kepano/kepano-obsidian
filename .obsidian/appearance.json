@@ -1,5 +1,8 @@
 {
   "accentColor": "",
   "cssTheme": "Minimal",
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "stock-charts"
+  ]
 }
