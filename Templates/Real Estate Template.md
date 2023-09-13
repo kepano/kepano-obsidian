@@ -6,7 +6,7 @@ tags:
 type: []
 address: 
 rating: 
-created: "{{date}}" 
+created: {{date}}
 url: 
 year: 
 price: 

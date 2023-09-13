@@ -1,7 +1,8 @@
 ---
 category:
   - "[[Podcasts]]"
-host: []
+host:
+  - "[[Steph Ango]]"
 rating: 
 tags:
   - podcast

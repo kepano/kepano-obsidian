@@ -1,3 +1,7 @@
+---
+tags:
+  - databases
+---
 ```dataview
 table without id file.link as Meeting, type as Type, people as People, date as Date
 from #meetings

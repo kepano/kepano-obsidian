@@ -6,7 +6,6 @@
   "backlink",
   "canvas",
   "tag-pane",
-  "properties",
   "page-preview",
   "daily-notes",
   "templates",
@@ -19,6 +18,5 @@
   "random-note",
   "outline",
   "workspaces",
-  "file-recovery",
-  "sync"
+  "file-recovery"
 ]

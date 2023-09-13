@@ -1,3 +1,7 @@
+---
+tags:
+  - databases
+---
 ```leaflet
 id: places
 markerTag: places

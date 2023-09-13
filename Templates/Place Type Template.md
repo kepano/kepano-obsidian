@@ -1,6 +1,5 @@
 ---
 tags:
-  - lists
   - places/types
 ---
 

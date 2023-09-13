@@ -1,3 +1,7 @@
+---
+tags:
+  - databases
+---
 ## Favorites
 
 ```dataview

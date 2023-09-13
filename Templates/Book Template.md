@@ -1,16 +1,17 @@
 ---
-cover:
-category: "[[Books]]"
-genre: ""
-author: ""
-length:
-isbn:
-isbn13:
-topics: ""
-year:
+category:
+  - "[[Books]]"
+cover: 
+genre: []
+author: []
+length: 
+isbn: 
+isbn13: 
+topics: []
+year: 
 rating: 
 created: {{date}}
-last: ""
+last: 
 via: ""
 tags:
   - books

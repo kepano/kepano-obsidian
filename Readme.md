@@ -25,7 +25,7 @@ Some of my templates depend on plugins I use:
 
 ### Folders
 
-I use very few folders. My personal notes such as journal entries are primarily in the root. Folders are for everything else. The folders I use:
+I use very few folders. My personal notes are primarily in the root, these are my journal entries. Folders are for everything else. The folders I use:
 
 - **Attachments** for images, PDFs, etc
 - **Clippings** for articles and other pages captured with my [web clipper](https://stephango.com/obsidian-web-clipper) written by other people

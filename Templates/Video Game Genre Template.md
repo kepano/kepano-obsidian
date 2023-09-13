@@ -1,5 +1,7 @@
-#games/genres
-
+---
+tags:
+  - games/genres
+---
 ```dataview
 table maker as "Maker", year as "Year", rating as "Rating"
 from #games

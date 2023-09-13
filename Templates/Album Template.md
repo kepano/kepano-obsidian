@@ -1,13 +1,14 @@
 ---
-category: "[[Albums]]"
+category:
+  - "[[Albums]]"
 tags:
   - music
   - albums
   - reference
-genre: ""
+genre: []
 artist: ""
 year: 
 created: {{date}}
-rating: 
+rating:
 ---
 

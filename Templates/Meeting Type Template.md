@@ -1,4 +1,8 @@
-#meetings/type 
+---
+tags:
+  - meetings/type
+---
+
 
 ```dataview
 table without id file.link as Meeting, people as People, date as Date

@@ -6,14 +6,11 @@ tags:
   - episodes
 show: 
 guests: 
-topics:
-  - ""
+topics: []
 episode: 
 url: 
 rating: 
 published: 
-last:
-  "{ date }":
+last: {{date}}
 ---
-
 - 

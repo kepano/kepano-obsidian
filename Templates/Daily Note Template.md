@@ -1,6 +1,4 @@
 ---
-previous: "[[{{date-1d}}]]"
-next: "[[{{date+1d}}]]"
 tags:
   - daily
 ---

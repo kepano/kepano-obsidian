@@ -1,3 +1,7 @@
+---
+tags:
+  - databases
+---
 ```dataview
 table without id file.link as Person, filter(file.tags, (t) => t !="#people") as Tags
 from #people 

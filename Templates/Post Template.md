@@ -3,11 +3,12 @@ category:
   - "[[Posts]]"
 tags:
   - posts
-author: "[[Me]]"
+author:
+  - "[[Me]]"
 url: 
-created: {{date}}
+created:
+  "{ date }": 
 published: 
-topics:
-  - ""
+topics: []
 status:
 ---

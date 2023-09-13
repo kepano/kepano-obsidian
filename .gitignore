@@ -3,6 +3,7 @@
 .obsidian/themes
 .obsidian/plugins
 .obsidian/community-plugins.json
+.obsidian/core-plugins-migration.json
 
 # Exclude macOS Finder (System Explorer) View States
 .DS_Store
