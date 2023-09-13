@@ -3,7 +3,9 @@ tags:
   - databases
 ---
 ```dataview
-table without id file.link as Event
-from #events 
-where !contains(file.name,"Template")
+table without id
+	file.link as Event
+where
+  contains(category,this.file.link) and
+  !contains(file.name,"Template")
 ```

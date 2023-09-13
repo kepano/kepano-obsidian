@@ -10,8 +10,11 @@ created: {{date}}
 ## Meetings
 
 ```dataview
-table without id file.link as Meeting, date as Date
-from #meetings
-where contains(people,this.file.link)
+table without id
+	file.link as Meeting,
+	date as Date
+where
+	contains(category,[[Meetings]]) and
+	contains(people,this.file.link)
 sort file.name desc
 ```

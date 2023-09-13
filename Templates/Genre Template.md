@@ -1,13 +1,12 @@
 ---
 tags:
-  - movies/genres
+  - genres
 ---
 ```dataview
 table without id
-	file.link as Movie,
+	file.link as Title,
 	rating as "Rating"
 where
-	contains(category,[[Movies]]) and
 	contains(genre,this.file.link)
 sort rating desc
 ```

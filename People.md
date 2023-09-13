@@ -3,8 +3,11 @@ tags:
   - databases
 ---
 ```dataview
-table without id file.link as Person, filter(file.tags, (t) => t !="#people") as Tags
-from #people 
-where !contains(file.name,"Template") and !contains(file.tags,"people/type")
+table without id
+	file.link as Person,
+	filter(file.tags, (t) => t !="#people") as Tags 
+where
+  contains(category,this.file.link) and
+  !contains(file.name,"Template")
 sort file.name asc
 ```

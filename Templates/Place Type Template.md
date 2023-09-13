@@ -13,7 +13,11 @@ height: 50%
 ```
 
 ```dataview
-table without id file.link as Place, rating as "Rating", loc as "Location"
+table without id
+	file.link as Place,
+	rating as Rating,
+	location as Location
 from #places
-where contains(type, this.file.link)
+where
+	contains(type, this.file.link)
 ```

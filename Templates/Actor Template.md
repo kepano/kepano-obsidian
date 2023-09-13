@@ -7,8 +7,12 @@ tags:
 ## Movies
 
 ```dataview
-table without id file.link as Movie, year as "Year", ratingImdb as "Rating"
-from #movies
-where cast = this.file.link or contains(cast,this.file.link)
-sort ratingImdb desc
+table without id
+	file.link as Movie,
+	year as Year,
+	rating as Rating
+where
+	contains(category,[[Movies]]) and
+	contains(cast,this.file.link)
+sort rating desc
 ```

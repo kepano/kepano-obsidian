@@ -33,7 +33,7 @@ coordinates: [[Madrid]]
 ```
 
 ```dataview
-table rating as "Rating", type as "Type"
+table rating as Rating, type as "Type"
 from #places
 where contains(loc, this.file.link)
 sort rating desc

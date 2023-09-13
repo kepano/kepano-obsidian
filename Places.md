@@ -11,8 +11,14 @@ height:50%
 
 
 ```dataview
-table without id file.link as Place, location as "Location", type as Type, rating as "Rating"
-from #places
-where !contains(file.tags,"places/types") and !contains(file.name,"Template")
+table without id
+	file.link as Place,
+	location as Location,
+	type as Type,
+	rating as Rating
+where
+	contains(category,this.file.link) and
+	!contains(file.tags,"places/types") and
+	!contains(file.name,"Template")
 sort last desc
 ```
