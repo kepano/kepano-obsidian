@@ -32,7 +32,7 @@ If you want to use this vault as a starting point the **Categories** and **Templ
 The folders I use:
 
 - **Attachments** for images, audio, videos, PDFs, etc.
-- **Clippings** for articles and other pages captured with my [web clipper](https://stephango.com/obsidian-web-clipper) written by other people.
+- **Clippings** for articles and web pages captured with my [web clipper](https://stephango.com/obsidian-web-clipper) written by other people.
 - **Daily** for my daily notes, all named `YYYY-MM-DD.md`.
 - **References** for anything that refers to something that exists outside of my vault, e.g. books, movies, places, people, podcasts, etc.
 - **Templates** for templates. In my real personal vault the "Templates" folder is nested under "Meta" which also contains my personal style guide and other random notes about the vault.
