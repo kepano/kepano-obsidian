@@ -31,7 +31,7 @@ I use very few folders. My personal notes are primarily in the root, these are m
 - **Clippings** for articles and other pages captured with my [web clipper](https://stephango.com/obsidian-web-clipper) written by other people
 - **Daily** for my daily notes, all named `YYYY-MM-DD.md`
 - **References** for anything that refers to something that exists outside of my vault, e.g. books, movies, places, people, podcasts, etc.
-- **Templates** for templates. This is actually nested under "Meta" in my personal vault, but I've moved it to the top-level for clarity. Meta also contains my personal style guide and other random things that are about the vault.
+- **Templates** for templates. In my personal vault Templates are nested under "Meta" which also contains my personal style guide and other random things that are about the vault. I have moved it to the root for the sake of clarity.
 
 I do not use the file explorer much for navigation. I primarily navigate using the quick switcher (`Cmd + O`).
 

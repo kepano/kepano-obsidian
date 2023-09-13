@@ -2,6 +2,7 @@
 tags:
   - databases
 ---
+
 ```dataview
 table without id
 	file.link as Company,
