@@ -43,6 +43,8 @@ The following folders are not part of my personal system, but I have created the
 ## Style guide
 ### Templates and metadata
 
+I use templates very heavily, because they allow me to lazily insert most of the metadata I need about any kind of note.
+
 The `.obsidian/types.json` file shows which properties are assigned to which types. 
 
 - Most of my properties attempt to be reusable across categories
