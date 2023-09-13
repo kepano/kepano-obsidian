@@ -5,7 +5,7 @@ tags:
 ```dataview
 table without id
 	file.link as Title,
-	rating as "Rating"
+	rating as Rating
 where
 	contains(genre,this.file.link)
 sort rating desc

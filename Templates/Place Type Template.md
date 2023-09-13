@@ -17,7 +17,7 @@ table without id
 	file.link as Place,
 	rating as Rating,
 	location as Location
-from #places
 where
+	contains(category, [[Places]]) and
 	contains(type, this.file.link)
 ```

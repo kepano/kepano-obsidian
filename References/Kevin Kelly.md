@@ -13,8 +13,8 @@ table without id
 	file.link as Title,
 	year as Year,
 	rating as Rating
-from #books
 where
+	contains(category,[[Books]]) and
 	contains(author,this.file.link)
 sort rating desc
 ```
@@ -25,8 +25,9 @@ sort rating desc
 table without id
 	file.link as Title,
 	published as Published
-from #clippings
-where author = this.file.link or contains(author,this.file.link)
+where
+	contains(category,[[Clippings]]) and
+	contains(author,this.file.link)
 sort rating desc
 ```
 
@@ -36,7 +37,8 @@ sort rating desc
 table without id
 	file.link as Podcast,
 	published as Published
-from #episodes
-where contains(guests,this.file.link)
+where
+	contains(category,[[Podcast episodes]]) and
+	contains(guests,this.file.link)
 sort rating desc
 ```

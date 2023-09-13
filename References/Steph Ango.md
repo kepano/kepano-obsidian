@@ -14,8 +14,10 @@ url: https://stephango.com/
 
 ```dataview
 table without id
-	file.link as Title, published as Publish
-where author = this.file.link or contains(author,this.file.link)
+	file.link as Title,
+	published as Published
+where
+	contains(author,this.file.link)
 sort rating desc
 ```
 
@@ -23,8 +25,10 @@ sort rating desc
 
 ```dataview
 table without id
-	file.link as Meeting, date as Date
-where contains(people,this.file.link)
+	file.link as Meeting,
+	date as Date
+where
+	contains(people,this.file.link)
 sort file.name desc
 ```
 

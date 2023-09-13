@@ -7,8 +7,12 @@ tags:
 ## Games
 
 ```dataview
-table year as Year, rating as Rating
-from #games
-where maker = this.file.link or contains(maker,this.file.link)
+table without id
+	file.link as Game,
+	year as Year,
+	rating as Rating
+where
+	contains(category,[[Games]]) and
+	contains(maker,this.file.link)
 sort year desc
 ```

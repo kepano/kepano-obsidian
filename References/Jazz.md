@@ -9,8 +9,8 @@ table without id
 	artist as Artist,
 	genre as Genre,
 	rating as Rating
-from #albums
 where
+	contains(category, [[Albums]]) and
 	contains(genre,this.file.link)
 sort rating desc
 ```

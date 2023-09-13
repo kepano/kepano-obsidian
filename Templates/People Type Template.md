@@ -5,8 +5,8 @@ tags:
 ```dataview
 table without id
 	file.link as Name
-from #people
 where
+	contains(category, [[People]]) and
 	!contains(file.name,"Template")
 sort file.name asc
 ```
