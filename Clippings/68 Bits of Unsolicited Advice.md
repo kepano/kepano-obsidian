@@ -11,6 +11,7 @@ created: 2023-09-12
 published: 2020-04-28
 topics: []
 ---
+
 It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispensing advice to the young ‘uns. Here are 68 pithy bits of unsolicited advice which I offer as my birthday present to all of you.
 
 - Learn how to learn from those you disagree with, or even offend you. See if you can find the truth in what they believe.
