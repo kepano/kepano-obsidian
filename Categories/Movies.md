@@ -13,7 +13,7 @@ table without id
 	director as Director
 where
 	contains(category,this.file.link)
-	and rating > 9
+	and rating > 6
 sort rating desc
 ```
 
