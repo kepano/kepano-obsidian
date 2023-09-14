@@ -25,7 +25,7 @@ Some of my templates depend on plugins I use:
 
 ### Folders
 
-I use very few folders. My personal notes are primarily in the root, these are my journal entries and personal ideas. That way I know that everything in the root is something I came up with. I do not use the file explorer much for navigation, instead I navigate mostly using the quick switcher or clicking links.
+I use very few folders. My personal notes are primarily in the root, these are my [[journal]] entries, [[evergreen]] notes, and personal ideas. That way I know that everything in the root is something I came up with. I do not use the file explorer much for navigation, instead I navigate mostly using the quick switcher or clicking links.
 
 If you want to use this vault as a starting point the **Categories** and **Templates** folders contain everything that you need.
 
