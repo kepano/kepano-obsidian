@@ -31,10 +31,11 @@ sort file.name desc
 
 ```leaflet
 id: kyoto
-minZoom: 10
+minZoom: 7
 maxZoom: 20
-defaultZoom: 12
-linksTo: [[Kyoto]]
+defaultZoom: 11
+markerTag:
+  - places
 height: 400px
 coordinates: [[Kyoto]]
 ```

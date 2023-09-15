@@ -11,6 +11,8 @@ rating:
 created: {{date}}
 last: 
 location:
+  - "35.021041"
+  - "135.7556075"
 ---
 ## Trips
 
@@ -32,7 +34,8 @@ id: kyoto
 minZoom: 10
 maxZoom: 20
 defaultZoom: 12
-linksTo: [[Kyoto]]
+markerTag:
+  - places
 height: 400px
 coordinates: [[Kyoto]]
 ```
