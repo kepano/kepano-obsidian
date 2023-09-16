@@ -19,7 +19,7 @@ To learn more about how I use Obsidian, visit my website [stephango.com](https:/
 
 Some of my templates depend on plugins I use:
 
-- [Dataview](https://github.com/blacksmithgu/obsidian-dataview) for many database views
+- [Dataview](https://github.com/blacksmithgu/obsidian-dataview) for overviews
 - [Leaflet](https://github.com/javalent/obsidian-leaflet) for maps
 
 ### Folders
