@@ -2,6 +2,7 @@
 tags:
   - movies/genres
 ---
+
 ```dataview
 table without id
 	file.link as Movie,

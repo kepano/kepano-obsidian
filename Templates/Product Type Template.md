@@ -2,6 +2,7 @@
 tags:
   - products/types
 ---
+
 ```dataview
 table without id
 	file.link as Item,

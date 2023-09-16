@@ -2,6 +2,7 @@
 tags:
   - people/types
 ---
+
 ```dataview
 table without id
 	file.link as Name

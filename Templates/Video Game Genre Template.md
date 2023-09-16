@@ -2,6 +2,7 @@
 tags:
   - games/genres
 ---
+
 ```dataview
 table without id
 	file.link as Game,

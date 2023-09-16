@@ -2,6 +2,7 @@
 tags:
   - categories
 ---
+
 ```dataview
 table without id
 	link(file.link, "Ep. " + string(episode)) as Episode,
