@@ -1,5 +1,6 @@
 ---
 category:
+  - "[[Posts]]"
   - "[[Clippings]]"
 created: 2023-09-14
 url: https://stephango.com/evergreen-notes
@@ -11,6 +12,8 @@ topics:
 tags:
   - 0🌲
   - clippings
+status:
+  - "[[Published]]"
 ---
 Using [[evergreen]] notes in Obsidian has been the most impactful change to how I think.
 
