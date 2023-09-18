@@ -24,7 +24,7 @@ Some of my templates depend on plugins I use:
 
 ### Folders
 
-I use very few folders. I avoid folders because many of my entries belong to many areas of thought. My system is oriented towards speed and laziness. I don't want the overhead of having to consider where something should go.
+I use very few folders. I avoid folders because many of my entries belong to more than one area of thought. My system is oriented towards speed and laziness. I don't want the overhead of having to consider where something should go.
 
 My personal notes are primarily in the root, these are my [journal](/Categories/Journal.md) entries, [evergreen](/Categories/Evergreen.md) notes, and personal ideas. That way I know that everything in the root is something I came up with. I do not use the file explorer much for navigation, instead I navigate mostly using the quick switcher or clicking links. 
 
