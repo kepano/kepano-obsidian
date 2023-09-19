@@ -76,4 +76,4 @@ Anything with a `rating` uses an integer from 1 to 7
   - 2 — **Atrocious**, actively avoid, repulsive
   - 1 — **Evil**, life-changing in a bad way
 
-Why this scale? I like the 7 scale better than 4 or 5 stars because I need more granularity at the top, for the good experiences, and 10 is too many.
+Why this scale? I like rating out of 7 better than 4 or 5 because I need more granularity at the top, for the good experiences, and 10 is too granular.
