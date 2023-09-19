@@ -56,7 +56,7 @@ The `.obsidian/types.json` file shows which properties are assigned to which typ
 
 ### Categories and tagging
 
-My notes are primarily organized using the category property, e.g. `category: "[[Movies]]"`. These also function as links that help me easily navigate to the overview note for that category. Some rules I follow:
+My notes are primarily organized using the category property, e.g. `category: "[[Movies]]"`. These also function as links that help me navigate to the overview note for that category. Some rules I follow:
 
 - Always pluralize categories and tags
 - Use `YYYY-MM-DD` everywhere
