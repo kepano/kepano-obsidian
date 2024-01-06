@@ -6,7 +6,7 @@ type:
 tags:
   - places
   - cities
-places:
+loc:
   - "[[Japan]]"
 location:
   - "35.021041"
@@ -23,7 +23,7 @@ table without id
 	end as End
 where
 	contains(category, [[Trips]]) and
-	contains(places, this.file.link)
+	contains(loc, this.file.link)
 sort file.name desc
 ```
 
@@ -49,6 +49,6 @@ table without id
 	type as Type
 where
 	contains(category, [[Places]]) and
-	contains(places, this.file.link)
+	contains(loc, this.file.link)
 sort rating desc
 ```

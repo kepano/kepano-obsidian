@@ -3,7 +3,7 @@ category:
   - "[[Places]]"
 type:
   - "[[Restaurants]]"
-places: 
+loc: 
 rating: 
 created: {{date}}
 last: {{date}}

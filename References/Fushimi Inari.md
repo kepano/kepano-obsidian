@@ -6,7 +6,7 @@ tags:
 type:
   - "[[Shrines]]"
   - "[[Parks]]"
-places:
+loc:
   - "[[Kyoto]]"
   - "[[Japan]]"
 rating: 7

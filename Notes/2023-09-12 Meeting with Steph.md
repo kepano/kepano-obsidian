@@ -5,7 +5,7 @@ type: []
 date: 2023-09-14
 org:
   - "[[Obsidian]]"
-places:
+loc:
   - Remote
 people:
   - "[[Steph Ango]]"

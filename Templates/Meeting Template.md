@@ -4,7 +4,7 @@ category:
 type: []
 date: {{date}}
 org: 
-places: []
+loc: 
 people: []
 topics: []
 tags:

@@ -14,7 +14,7 @@ height:400px
 ```dataview
 table without id
 	file.link as Place,
-	places as Places,
+	loc as Location,
 	type as Type,
 	rating as Rating
 where

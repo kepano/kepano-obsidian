@@ -6,7 +6,7 @@ tags:
 ```dataview
 table without id
 	file.link as Trip,
-	places as Places,
+	loc as Location,
 	start as Start,
 	end as End
 where

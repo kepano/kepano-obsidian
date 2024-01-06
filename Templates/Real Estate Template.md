@@ -12,6 +12,6 @@ year:
 price: 
 sqft: 
 lotsqft: 
-places: []
+loc: []
 status:
 ---

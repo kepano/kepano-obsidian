@@ -18,7 +18,7 @@ height: 400px
 table without id
 	file.link as Place,
 	rating as Rating,
-	places as Places
+	loc as Location
 where
 	contains(category, [[Places]]) and
 	contains(type, this.file.link)
