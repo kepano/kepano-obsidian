@@ -4,7 +4,7 @@ category:
 tags:
   - places
 type: []
-loc: []
+places: []
 rating: 
 created: {{date}}
 last: {{date}}

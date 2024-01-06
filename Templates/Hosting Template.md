@@ -3,7 +3,7 @@ category:
   - "[[Hosting]]"
 start: 
 end: 
-loc: 
+places: []
 people: []
 tags:
   - hosting

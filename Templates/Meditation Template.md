@@ -6,7 +6,7 @@ tags:
   - journal
   - meditation
 created: {{date}}
-loc: []
+places: []
 topics: []
 ---
 
