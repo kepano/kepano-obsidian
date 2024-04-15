@@ -47,6 +47,7 @@
     "author": "multitext",
     "published": "date",
     "where": "multitext",
-    "loc": "multitext"
+    "loc": "multitext",
+    "monthly-uses": "number"
   }
 }

@@ -9,12 +9,12 @@ table without id
 	maker as Maker,
 	price as Price,
 	rating as Rating,
-	purchased as Purchased
+	acquired as Acquired
 where
 	contains(category, [[Products]]) and
 	contains(type,this.file.link)
 sort
-	purchased desc,
+	acquired desc,
 	rating desc,
 	file.mtime desc
 ```

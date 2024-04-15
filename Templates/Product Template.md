@@ -6,7 +6,8 @@ maker:
 model: 
 rating: 
 price: 
-purchased: {{date}}
+acquired: {{date}}
+monthly-uses: 
 tags:
   - products
 ---
