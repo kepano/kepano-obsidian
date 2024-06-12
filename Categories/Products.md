@@ -1,3 +1,8 @@
+---
+tags:
+  - categories
+---
+
 ```dataview
 table without id
 	file.link as Product,
