@@ -21,5 +21,6 @@ table without id
 	loc as Location
 where
 	contains(category, [[Places]]) and
+	!contains(file.name,"Template") and 
 	contains(type, this.file.link)
 ```
