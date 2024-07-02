@@ -1,5 +1,7 @@
 ---
 category: "[[People]]"
+type:
+  - "[[Musicians]]"
 tags:
   - people
   - musicians

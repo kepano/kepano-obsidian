@@ -1,6 +1,7 @@
 ---
 category:
   - "[[People]]"
+type: []
 tags:
   - people
 birthday: 

@@ -1,6 +1,8 @@
 ---
 category:
   - "[[People]]"
+type:
+  - "[[Directors]]"
 tags:
   - people
   - directors

@@ -6,7 +6,7 @@ tags:
 ```dataview
 table without id
 	file.link as Person,
-	filter(file.tags, (t) => t !="#people") as Tags 
+	type as Type 
 where
   contains(category,this.file.link) and
   !contains(file.name,"Template")
