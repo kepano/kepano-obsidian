@@ -1,6 +1,8 @@
 ---
 category:
   - "[[People]]"
+type:
+  - "[[Authors]]"
 tags:
   - people
   - authors

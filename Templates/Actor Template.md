@@ -1,5 +1,7 @@
 ---
 category: "[[People]]"
+type:
+  - "[[Actors]]"
 tags:
   - people
   - actors
