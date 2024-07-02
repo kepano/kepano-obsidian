@@ -12,6 +12,7 @@ table without id
 	acquired as Acquired
 where
 	contains(category, [[Products]]) and
+	!contains(file.name,"Template") and 
 	contains(type,this.file.link)
 sort
 	acquired desc,
