@@ -10,7 +10,7 @@ table without id
 	year as Year,
 	rating as Rating
 where
-	contains(categoy, [[Games]]) and
+	contains(category, [[Games]]) and
 	!contains(file.name, "Template") and
 	contains(genre, this.file.link)
 sort rating desc
