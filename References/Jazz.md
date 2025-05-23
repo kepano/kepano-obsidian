@@ -10,7 +10,7 @@ table without id
 	genre as Genre,
 	rating as Rating
 where
-	contains(category, [[Albums]]) and
+	contains(categories, [[Albums]]) and
 	contains(genre,this.file.link)
 sort rating desc
 ```

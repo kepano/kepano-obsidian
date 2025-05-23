@@ -18,7 +18,7 @@ table without id
 	type as Type,
 	rating as Rating
 where
-	contains(category,this.file.link) and
+	contains(categories,this.file.link) and
 	!contains(file.tags,"places/types") and
 	!contains(file.name,"Template")
 sort last desc

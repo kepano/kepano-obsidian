@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Real estate]]"
 tags:
   - places

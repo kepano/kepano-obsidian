@@ -12,7 +12,7 @@ table without id
 	maker as Maker
 where
 	!contains(file.name, "Template") and
-	contains(category, [[Products]])
+	contains(categories, [[Products]])
 sort
 	acquired desc,
 	file.name,

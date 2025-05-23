@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Companies]]"
 tags:
   - companies
@@ -12,7 +12,7 @@ table without id
 	year as Year,
 	rating as Rating
 where
-	contains(category,[[Games]]) and
+	contains(categories,[[Games]]) and
 	contains(maker,this.file.link)
 sort year desc
 ```

@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Posts]]"
   - "[[Clippings]]"
 created: 2023-09-14

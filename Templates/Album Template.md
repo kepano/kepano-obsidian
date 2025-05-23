@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Albums]]"
 tags:
   - music

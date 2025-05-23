@@ -1,5 +1,5 @@
 ---
-category: "[[People]]"
+categories: "[[People]]"
 tags:
   - people
   - actors
@@ -12,7 +12,7 @@ table without id
 	year as Year,
 	rating as Rating
 where
-	contains(category,[[Movies]]) and
+	contains(categories,[[Movies]]) and
 	contains(cast,this.file.link)
 sort rating desc
 ```

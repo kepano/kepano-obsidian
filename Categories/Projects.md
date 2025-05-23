@@ -10,7 +10,7 @@ table
 	status as Status,
 	url as URL
 where
-	contains(category,this.file.link) and
+	contains(categories,this.file.link) and
 	!contains(file.name,"Template")
 sort year desc
 ```

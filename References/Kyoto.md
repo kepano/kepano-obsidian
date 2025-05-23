@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Places]]"
 type:
   - "[[Cities]]"
@@ -22,7 +22,7 @@ table without id
 	start as Start,
 	end as End
 where
-	contains(category, [[Trips]]) and
+	contains(categories, [[Trips]]) and
 	contains(loc, this.file.link)
 sort file.name desc
 ```
@@ -48,7 +48,7 @@ table without id
 	rating as Rating,
 	type as Type
 where
-	contains(category, [[Places]]) and
+	contains(categories, [[Places]]) and
 	contains(loc, this.file.link)
 sort rating desc
 ```

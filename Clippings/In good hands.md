@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Clippings]]"
   - "[[Posts]]"
 author:

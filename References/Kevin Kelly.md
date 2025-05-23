@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[People]]"
 tags:
   - people
@@ -14,7 +14,7 @@ table without id
 	year as Year,
 	rating as Rating
 where
-	contains(category,[[Books]]) and
+	contains(categories,[[Books]]) and
 	contains(author,this.file.link)
 sort rating desc
 ```
@@ -26,7 +26,7 @@ table without id
 	file.link as Title,
 	published as Published
 where
-	contains(category,[[Clippings]]) and
+	contains(categories,[[Clippings]]) and
 	contains(author,this.file.link)
 sort rating desc
 ```
@@ -38,7 +38,7 @@ table without id
 	file.link as Podcast,
 	published as Published
 where
-	contains(category,[[Podcast episodes]]) and
+	contains(categories,[[Podcast episodes]]) and
 	contains(guests,this.file.link)
 sort rating desc
 ```

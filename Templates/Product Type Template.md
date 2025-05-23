@@ -11,7 +11,7 @@ table without id
 	rating as Rating,
 	acquired as Acquired
 where
-	contains(category, [[Products]]) and
+	contains(categories, [[Products]]) and
 	!contains(file.name,"Template") and 
 	contains(type,this.file.link)
 sort

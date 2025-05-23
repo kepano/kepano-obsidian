@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Meetings]]"
 type: []
 date: 2023-09-14

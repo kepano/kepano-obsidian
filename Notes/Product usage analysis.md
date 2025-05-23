@@ -13,7 +13,7 @@ table without id
 	type as Type
 where
 	monthly-uses > 0 and
-	contains(category, [[Products]])
+	contains(categories, [[Products]])
 sort
 	round(price/(monthly-uses*((date(today) - acquired).months)),2) asc
 ```

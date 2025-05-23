@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Products]]"
 type: 
 maker: 

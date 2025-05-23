@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Recipes]]"
   - "[[Clippings]]"
 cuisine:

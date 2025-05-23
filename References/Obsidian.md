@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Companies]]"
   - "[[Apps]]"
 tags:

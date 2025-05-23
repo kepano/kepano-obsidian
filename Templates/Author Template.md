@@ -1,5 +1,5 @@
 ---
-category: "[[People]]"
+categories: "[[People]]"
 tags:
   - people
   - authors
@@ -12,7 +12,7 @@ table without id
 	year as Year,
 	rating as Rating
 where
-	contains(category,[[Books]]) and
+	contains(categories,[[Books]]) and
 	contains(author,this.file.link)
 sort rating desc
 ```

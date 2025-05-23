@@ -1,5 +1,5 @@
 ---
-category: 
+categories: 
   - "[[Conference sessions]]"
 conference: 
 speaker: 

@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Podcasts]]"
 host: []
 rating: 
@@ -14,7 +14,7 @@ table without id
 	guests as Guest,
 	rating as Rating
 where
-	contains(category,[[Podcast episodes]]) and
+	contains(categories,[[Podcast episodes]]) and
 	contains(show,this.file.link)
 sort episode desc
 ```

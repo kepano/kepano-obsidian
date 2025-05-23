@@ -12,7 +12,7 @@ table without id
 	last as "Last seen",
 	director as Director
 where
-	contains(category,this.file.link)
+	contains(categories,this.file.link)
 	and rating > 6
 sort rating desc
 ```
@@ -27,7 +27,7 @@ table without id
 	last as "Last seen",
 	director as Director
 where
-	contains(category,this.file.link) and
+	contains(categories,this.file.link) and
 	last != "" and !contains(file.name, "Template")
 sort last desc
 limit 100

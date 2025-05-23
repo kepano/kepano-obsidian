@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Events]]"
 tags:
   - events

@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Games]]"
 maker: 
 genre: []

@@ -12,7 +12,7 @@ table without id
 	rating as Rating,
 	published as "Published"
 where
-	contains(category,this.file.link) and
+	contains(categories,this.file.link) and
 	!contains(file.name, "Template")
 sort published desc
 ```

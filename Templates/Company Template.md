@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Companies]]"
 tags:
   - companies

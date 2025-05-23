@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Trips]]"
 start: 
 end: 

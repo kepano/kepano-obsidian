@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Food]]"
 tags:
   - food

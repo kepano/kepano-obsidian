@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Shows]]"
 genre:
   - "[[Sci-fi]]"

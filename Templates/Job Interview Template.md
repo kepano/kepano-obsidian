@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Meetings]]"
 type:
   - "[[Job Interviews]]"

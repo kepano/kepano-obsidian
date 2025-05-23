@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Games]]"
 system: "[[Nintendo Switch]]"
 maker: "[[Nintendo]]"

@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Places]]"
 tags:
   - places

@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Projects]]"
 type: []
 org: []

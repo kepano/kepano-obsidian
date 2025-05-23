@@ -10,7 +10,7 @@ table without id
 	people as People,
 	date as Date
 where
-	contains(category, [[Meetings]]) and
+	contains(categories, [[Meetings]]) and
 	!contains(file.name,"Template") and 
 	contains(type,this.file.link)
 sort date desc

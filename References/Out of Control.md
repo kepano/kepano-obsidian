@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Books]]"
 cover: "[[out-of-control.jpg]]"
 isbn: 201483408

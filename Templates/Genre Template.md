@@ -6,7 +6,7 @@ tags:
 ```dataview
 table without id
 	file.link as Title,
-	category as Category,
+	categories as categories,
 	rating as Rating
 where
 	contains(genre,this.file.link)

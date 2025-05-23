@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Books]]"
 author:
   - "[[E. M. Forster]]"

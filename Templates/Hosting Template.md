@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[Hosting]]"
 start: 
 end: 

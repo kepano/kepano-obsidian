@@ -1,5 +1,5 @@
 ---
-category: "[[Apps]]"
+categories: "[[Apps]]"
 tags:
   - apps
 maker: ""

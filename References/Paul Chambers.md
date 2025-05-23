@@ -1,5 +1,5 @@
 ---
-category:
+categories:
   - "[[People]]"
 tags:
   - people
@@ -14,7 +14,7 @@ table without id
 	artist as Artist,
 	rating as Rating
 where
-	contains(category,[[Albums]]) and
+	contains(categories,[[Albums]]) and
 	contains(artist,this.file.link)
 sort rating desc
 ```
