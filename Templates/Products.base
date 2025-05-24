@@ -1,0 +1,65 @@
+filters:
+  and:
+    - contains(category, "[[Products]]")
+    - not(contains(file.name, "Template"))
+    - property.monthly-uses > 0
+formulas:
+  Usage: formula.Owned * monthly-uses
+  Owned: round(dateDiff(acquired, now()) / -2629746000)
+  Per use: concat("$", price / formula.Usage)
+display:
+  property.monthly-uses: Uses/month
+  formula.Owned: Months
+  formula.Usage: Total uses
+  property.price: Price
+  property.rating: Rating
+  property.acquired: Acquired
+  property.type: Type
+  file.name: Product
+views:
+  - type: table
+    name: Products
+    order:
+      - file.name
+      - rating
+      - price
+      - acquired
+      - type
+    columnSize:
+      file.name: 209
+      property.monthly-uses: 82
+      formula.Usage: 115
+    sort:
+      - column: file.name
+        direction: ASC
+      - column: formula.Usage
+        direction: DESC
+      - column: property.acquired
+        direction: DESC
+      - column: property.monthly-uses
+        direction: DESC
+  - type: table
+    name: Cost per use
+    order:
+      - file.name
+      - rating
+      - formula.Per use
+      - monthly-uses
+      - price
+      - formula.Usage
+      - formula.Owned
+      - acquired
+      - type
+    columnSize:
+      formula.Per use: 77
+      property.monthly-uses: 82
+      formula.Usage: 115
+    sort:
+      - column: file.name
+        direction: ASC
+      - column: formula.Usage
+        direction: DESC
+      - column: property.acquired
+        direction: DESC
+      - column: property.monthly-uses
+        direction: DESC

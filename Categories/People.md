@@ -3,12 +3,19 @@ tags:
   - categories
 ---
 
-```dataview
-table without id
-	file.link as Person,
-	filter(file.tags, (t) => t !="#people") as Tags 
-where
-  contains(categories,this.file.link) and
-  !contains(file.name,"Template")
-sort file.name asc
+```base
+filters:
+  and:
+    - contains(property.categories, "[[People]]")
+    - not(contains(file.name, "Template"))
+display:
+  file.name: Name
+  property.tags: Tags
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - tags
+
 ```

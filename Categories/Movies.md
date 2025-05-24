@@ -4,31 +4,11 @@ tags:
 ---
 ## Favorites
 
-```dataview
-table without id
-	file.link as Movie,
-	year as Year,
-	rating as Rating,
-	last as "Last seen",
-	director as Director
-where
-	contains(categories,this.file.link)
-	and rating > 6
-sort rating desc
-```
+![[Movies.base#Favorites]]
+
 
 ## Last seen
 
-```dataview
-table without id
-	file.link as Movie,
-	year as Year,
-	rating as Rating,
-	last as "Last seen",
-	director as Director
-where
-	contains(categories,this.file.link) and
-	last != "" and !contains(file.name, "Template")
-sort last desc
-limit 100
-```
+![[Movies.base#Last seen]]
+
+

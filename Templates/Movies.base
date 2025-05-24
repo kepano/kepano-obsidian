@@ -1,0 +1,58 @@
+filters:
+  and:
+    - contains
+    - not(contains(file.name, "Template"))
+display:
+  file.name: Name
+  property.last: Last
+  property.rating: Rating
+  property.year: Year
+  property.director: Director
+  property.genre: Genre
+views:
+  - type: table
+    name: Favorites
+    filters:
+      and:
+        - property.rating > 6
+    order:
+      - file.name
+      - year
+      - rating
+      - last
+      - director
+      - genre
+  - type: table
+    name: All
+    order:
+      - file.name
+      - year
+      - rating
+      - last
+      - director
+      - genre
+  - type: table
+    name: Last seen
+    filters:
+      and:
+        - not(empty(property.last))
+    order:
+      - file.name
+      - year
+      - rating
+      - last
+      - director
+      - genre
+    sort:
+      - column: property.last
+        direction: ASC
+  - type: table
+    name: Actor
+    filters:
+      and:
+        - contains(cast, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - year
+      - director
+      - genre

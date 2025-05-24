@@ -3,11 +3,28 @@ tags:
   - categories
 ---
 
-```dataview
-table without id
-	file.link as Recipe, type as Type, author as Author, ingredients as Ingredients, rating as Rating
-where
-	contains(categories,this.file.link) and
-	!contains(file.name,"Template")
-sort created desc
+
+```base
+filters:
+  and:
+    - contains(categories, concat("[[", this.file.name, "]]"))
+    - not(contains(file.name, "Template"))
+display:
+  file.name: Name
+  property.author: Author
+  property.type: Type
+  property.ingredients: Ingredients
+  property.cuisine: Cuisine
+  property.rating: Rating
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - type
+      - author
+      - ingredients
+      - cuisine
+      - rating
+
 ```

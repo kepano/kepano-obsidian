@@ -3,15 +3,24 @@ tags:
   - categories
 ---
 
-```dataview
-table without id
-	file.link as Meeting,
-	type as Type,
-	people as People,
-	date as Date
-where 
-	contains(categories,this.file.link) and
-	!contains(file.name,"Template")
-sort date desc
-limit 100
+
+```base
+filters:
+  and:
+    - contains(categories, concat("[[", this.file.name, "]]"))
+    - not(contains(file.name, "Template"))
+display:
+  file.name: Meeting
+  property.type: Type
+  property.people: People
+  property.date: Date
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - type
+      - people
+      - date
+
 ```

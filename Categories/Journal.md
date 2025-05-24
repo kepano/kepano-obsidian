@@ -3,12 +3,19 @@ tags:
   - categories
 ---
 
-```dataview
-table without id
-	file.link as Entry,
-	created as Created
-from #journal
-where
-	!contains(file.name,"Template")
-sort created desc
+```base
+filters:
+  and:
+    - contains(property.tags, "journal")
+    - not(contains(file.name, "Template"))
+display:
+  file.name: Entry
+  property.created: Created
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - created
+
 ```

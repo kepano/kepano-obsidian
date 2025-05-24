@@ -8,16 +8,7 @@ created: 2023-09-12
 ---
 ## Books
 
-```dataview
-table without id
-	file.link as Title,
-	year as Year,
-	rating as Rating
-where
-	contains(categories,[[Books]]) and
-	contains(author,this.file.link)
-sort rating desc
-```
+![[Books.base#Author]]
 
 # Clippings
 

@@ -3,16 +3,27 @@ tags:
   - categories
 ---
 
-```dataview
-table without id
-	file.link as Game,
-	maker as Maker,
-	genre as Genre,
-	year as Year,
-	rating as Rating,
-	last as "Last played"
-where
-	contains(categories,this.file.link) and
-	!contains(file.name, "Template")
-sort last desc
+
+```base
+display:
+  file.name: Book
+  property.year: Year
+  property.maker: Maker
+  property.rating: Rating
+  property.genre: Genre
+  property.last: Last played
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - contains(property.categories, "[[Games]]")
+        - not(contains(file.name, "Template"))
+    order:
+      - file.name
+      - maker
+      - genre
+      - year
+      - rating
+      - last
 ```

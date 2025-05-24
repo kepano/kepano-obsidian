@@ -2,14 +2,21 @@
 tags:
   - categories
 ---
+```base
+filters:
+  and:
+    - contains(categories, concat("[[", this.file.name, "]]"))
+    - not(contains(file.name, "Template"))
+display:
+  file.name: Name
+  property.rating: Rating
+  property.last: Last
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - rating
+      - last
 
-```dataview
-table without id
-	file.link as Show,
-	rating as Rating, 
-	last as "Last seen"
-where
-	contains(categories, this.file.link) and
-	!contains(file.name, "Template")
-sort last desc
 ```

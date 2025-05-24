@@ -3,16 +3,26 @@ tags:
   - categories
 ---
 
-```dataview
-table without id
-	link(file.link, "Ep. " + string(episode)) as Episode,
-	show as Show,
-	guests as Guest,
-	episode as Ep,
-	rating as Rating,
-	published as "Published"
-where
-	contains(categories,this.file.link) and
-	!contains(file.name, "Template")
-sort published desc
+```base
+display:
+  file.name: Podcast
+  property.show: Show
+  property.guests: Guests
+  property.episode: Episode
+  property.rating: Rating
+  property.published: Published
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - contains(categories, concat("[[", this.file.name, "]]"))
+        - not(contains(file.name, "Template"))
+    order:
+      - file.name
+      - show
+      - guests
+      - episode
+      - rating
+      - published
 ```

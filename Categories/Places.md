@@ -11,15 +11,26 @@ height:400px
 
 ## Places
 
-```dataview
-table without id
-	file.link as Place,
-	loc as Location,
-	type as Type,
-	rating as Rating
-where
-	contains(categories,this.file.link) and
-	!contains(file.tags,"places/types") and
-	!contains(file.name,"Template")
-sort last desc
+```base
+filters:
+  and:
+    - contains(property.categories, "[[Places]]")
+    - not(contains(file.name, "Template"))
+display:
+  property.type: Type
+  property.rating: Rating
+  property.loc: Location
+  file.name: Name
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - loc
+      - type
+      - rating
+    sort:
+      - column: property.loc
+        direction: ASC
+
 ```

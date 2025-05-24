@@ -1,0 +1,53 @@
+filters:
+  and:
+    - contains(property.categories, "[[Books]]")
+    - not(contains(file.name, "Template"))
+display:
+  file.name: Name
+  property.last: Last
+  property.rating: Rating
+  property.year: Year
+  property.genre: Genre
+  property.author: Author
+  property.created: Added
+views:
+  - type: table
+    name: Favorites
+    order:
+      - author
+      - file.name
+      - rating
+      - year
+      - created
+      - genre
+  - type: table
+    name: All
+    order:
+      - file.name
+      - year
+      - rating
+      - last
+      - genre
+  - type: table
+    name: Last read
+    filters:
+      and:
+        - not(empty(property.last))
+    order:
+      - file.name
+      - year
+      - rating
+      - last
+      - genre
+    sort:
+      - column: property.last
+        direction: ASC
+  - type: table
+    name: Author
+    filters:
+      and:
+        - contains(author, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - year
+      - genre
