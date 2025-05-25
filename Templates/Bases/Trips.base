@@ -1,0 +1,27 @@
+filters:
+  and:
+    - contains(property.categories, "[[Trips]]")
+    - not(contains(file.name, "Template"))
+display:
+  property.loc: Location
+  property.start: Start
+  property.end: End
+  file.name: Trip
+views:
+  - type: table
+    name: Trips
+    order:
+      - file.name
+      - loc
+      - start
+      - end
+  - type: table
+    name: Related trips
+    filters:
+      and:
+        - contains(loc, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - loc
+      - start
+      - end

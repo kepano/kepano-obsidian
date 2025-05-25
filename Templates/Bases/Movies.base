@@ -9,6 +9,7 @@ display:
   property.year: Year
   property.director: Director
   property.genre: Genre
+  property.cast: Cast
 views:
   - type: table
     name: Favorites
@@ -55,4 +56,24 @@ views:
       - file.name
       - year
       - director
+      - genre
+  - type: table
+    name: Genre
+    filters:
+      and:
+        - contains(genre, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - year
+      - director
+      - genre
+  - type: table
+    name: Director
+    filters:
+      and:
+        - contains(director, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - year
+      - cast
       - genre

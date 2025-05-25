@@ -12,24 +12,8 @@ created: 2023-09-12
 
 # Clippings
 
-```dataview
-table without id
-	file.link as Title,
-	published as Published
-where
-	contains(categories,[[Clippings]]) and
-	contains(author,this.file.link)
-sort rating desc
-```
+![[Clippings.base#Author]]
 
 # Podcast episodes
 
-```dataview
-table without id
-	file.link as Podcast,
-	published as Published
-where
-	contains(categories,[[Podcast episodes]]) and
-	contains(guests,this.file.link)
-sort rating desc
-```
+![[Podcast episodes.base#Guest]]

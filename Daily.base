@@ -1,0 +1,29 @@
+filters:
+  or:
+    - linksTo(file.file, this.file.path)
+    - contains(property.created, this.file.name)
+    - contains(property.last, this.file.name)
+    - contains(property.end, this.file.name)
+display:
+  file.name: Entry
+  property.category: Categories
+  property.created: Created
+views:
+  - type: table
+    name: Daily notes
+    filters:
+      and:
+        - not(contains(property.tags, "monthly"))
+    order:
+      - file.name
+      - category
+      - created
+    sort:
+      - column: file.name
+        direction: ASC
+      - column: property.category
+        direction: ASC
+      - column: property.created
+        direction: ASC
+    columnSize:
+      file.name: 263
