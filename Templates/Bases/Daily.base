@@ -6,22 +6,21 @@ filters:
     - contains(property.end, this.file.name)
 display:
   file.name: Entry
-  property.category: Categories
   property.created: Created
+  property.categories: Categories
 views:
   - type: table
     name: Daily notes
     filters:
       and:
-        - not(contains(property.tags, "monthly"))
+        - not(taggedWith(file.file, "daily"))
+        - not(taggedWith(file.file, "monthly"))
     order:
       - file.name
-      - category
+      - categories
       - created
     sort:
       - column: file.name
-        direction: ASC
-      - column: property.category
         direction: ASC
       - column: property.created
         direction: ASC

@@ -1,7 +1,7 @@
 filters:
   and:
     - not(contains(file.name, "Template"))
-    - contains(property.categories, "[[Movies]]")
+    - contains(property.categories, "[[Shows]]")
 display:
   file.name: Name
   property.last: Last

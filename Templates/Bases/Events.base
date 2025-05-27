@@ -1,0 +1,29 @@
+filters:
+  and:
+    - contains(property.categories, "[[Events]]")
+    - not(contains(file.name, "Template"))
+display:
+  file.name: Event
+  property.loc: Location
+views:
+  - type: table
+    name: Events
+    order:
+      - file.name
+      - loc
+      - start
+  - type: table
+    name: Type
+    filters:
+      and:
+        - contains(type, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - loc
+      - start
+    columnSize:
+      file.name: 226
+      property.loc: 199
+    sort:
+      - column: property.start
+        direction: DESC

@@ -1,0 +1,13 @@
+filters:
+  and:
+    - contains(property.categories, "[[Podcasts]]")
+    - not(contains(file.name, "Template"))
+display:
+  file.name: Podcast
+  property.host: Host
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - host

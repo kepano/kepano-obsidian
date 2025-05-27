@@ -1,0 +1,13 @@
+display:
+  file.name: Name
+  property.created: Created
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - contains(property.tags, "0🌲")
+        - not(contains(file.name, "Template"))
+    order:
+      - file.name
+      - created
