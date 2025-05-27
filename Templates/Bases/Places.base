@@ -1,0 +1,52 @@
+filters:
+  and:
+    - contains(property.categories, "[[Places]]")
+    - not(contains(file.name, "Template"))
+display:
+  property.type: Type
+  property.rating: Rating
+  property.loc: Location
+  file.name: Name
+  property.last: Last
+views:
+  - type: table
+    name: Places
+    order:
+      - file.name
+      - loc
+      - type
+      - rating
+      - last
+    sort:
+      - column: property.loc
+        direction: ASC
+  - type: table
+    name: Location
+    filters:
+      and:
+        - contains(loc, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - type
+      - rating
+      - last
+    sort:
+      - column: property.last
+        direction: DESC
+      - column: property.loc
+        direction: ASC
+  - type: table
+    name: Type
+    filters:
+      and:
+        - contains(type, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - type
+      - rating
+      - last
+    sort:
+      - column: property.last
+        direction: DESC
+      - column: property.loc
+        direction: ASC

@@ -1,0 +1,45 @@
+filters:
+  and:
+    - contains(property.categories, "[[Podcast episodes]]")
+    - not(contains(file.name, "Template"))
+display:
+  file.name: Podcast
+  property.show: Show
+  property.guests: Guests
+  property.episode: Episode
+  property.rating: Rating
+  property.published: Published
+views:
+  - type: table
+    name: All episodes
+    order:
+      - file.name
+      - show
+      - guests
+      - episode
+      - rating
+      - published
+  - type: table
+    name: Show
+    filters:
+      and:
+        - contains(show, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - show
+      - guests
+      - episode
+      - rating
+      - published
+  - type: table
+    name: Guest
+    filters:
+      and:
+        - contains(guests, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - show
+      - guests
+      - episode
+      - rating
+      - published

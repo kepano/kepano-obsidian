@@ -12,23 +12,8 @@ url: https://stephango.com/
 ---
 ## Clippings
 
-```dataview
-table without id
-	file.link as Title,
-	published as Published
-where
-	contains(author,this.file.link)
-sort rating desc
-```
+![[Clippings.base#Author]]
 
 ## Meetings
 
-```dataview
-table without id
-	file.link as Meeting,
-	date as Date
-where
-	contains(people,this.file.link)
-sort file.name desc
-```
-
+![[Meetings.base#Person]]

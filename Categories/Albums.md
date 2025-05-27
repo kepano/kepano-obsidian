@@ -4,15 +4,4 @@ tags:
   - categories
 ---
 
-```dataview
-table without id
-	file.link as Album,
-	artist as Artist,
-	rating as Rating,
-	year as Year,
-	genre as Genre
-where
-	contains(categories,this.file.link) and
-	!contains(file.name, "Template")
-sort rating desc
-```
+![[Albums.base]]

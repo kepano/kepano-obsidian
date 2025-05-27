@@ -16,16 +16,7 @@ created: 2023-09-12
 ---
 ## Trips
 
-```dataview
-table without id
-	file.link as Trip,
-	start as Start,
-	end as End
-where
-	contains(categories, [[Trips]]) and
-	contains(loc, this.file.link)
-sort file.name desc
-```
+![[Trips.base#Related trips]]
 
 ## Map
 
@@ -42,13 +33,4 @@ coordinates: [[Kyoto]]
 
 ## Places
 
-```dataview
-table without id
-	file.link as Place,
-	rating as Rating,
-	type as Type
-where
-	contains(categories, [[Places]]) and
-	contains(loc, this.file.link)
-sort rating desc
-```
+![[Places.base#Location]]

@@ -1,0 +1,14 @@
+filters:
+  and:
+    - linksTo(file.file, this.file.path)
+display:
+  property.category: Category
+  file.name: Name
+  property.created: Created
+views:
+  - type: table
+    name: Backlinks
+    order:
+      - file.name
+      - category
+      - created

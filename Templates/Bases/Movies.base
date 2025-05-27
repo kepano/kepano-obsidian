@@ -1,0 +1,85 @@
+filters:
+  and:
+    - not(contains(file.name, "Template"))
+    - contains(property.categories, "[[Movies]]")
+display:
+  file.name: Name
+  property.last: Last
+  property.rating: Rating
+  property.year: Year
+  property.director: Director
+  property.genre: Genre
+  property.cast: Cast
+views:
+  - type: table
+    name: Favorites
+    filters:
+      and:
+        - property.rating > 6
+    order:
+      - file.name
+      - year
+      - rating
+      - last
+      - director
+      - genre
+  - type: table
+    name: All
+    order:
+      - file.name
+      - year
+      - rating
+      - last
+      - director
+      - genre
+    sort:
+      - column: file.name
+        direction: ASC
+      - column: property.director
+        direction: ASC
+  - type: table
+    name: Last seen
+    filters:
+      and:
+        - not(empty(property.last))
+    order:
+      - file.name
+      - year
+      - rating
+      - last
+      - director
+      - genre
+    sort:
+      - column: property.last
+        direction: DESC
+    limit: 20
+  - type: table
+    name: Actor
+    filters:
+      and:
+        - contains(cast, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - year
+      - director
+      - genre
+  - type: table
+    name: Genre
+    filters:
+      and:
+        - contains(genre, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - year
+      - director
+      - genre
+  - type: table
+    name: Director
+    filters:
+      and:
+        - contains(director, concat("[[", this.file.name, "]]"))
+    order:
+      - file.name
+      - year
+      - cast
+      - genre
