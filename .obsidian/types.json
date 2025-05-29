@@ -33,7 +33,6 @@
     "process": "text",
     "phone": "text",
     "role": "text",
-    "length": "text",
     "birthday": "date",
     "guests": "multitext",
     "cuisine": "multitext",
@@ -48,6 +47,8 @@
     "published": "date",
     "where": "multitext",
     "loc": "multitext",
-    "monthly-uses": "number"
+    "monthly-uses": "number",
+    "runtime": "number",
+    "pages": "number"
   }
 }

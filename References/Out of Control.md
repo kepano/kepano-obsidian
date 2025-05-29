@@ -4,7 +4,7 @@ categories:
 cover: "[[out-of-control.jpg]]"
 isbn: 201483408
 isbn13: 9780201483406
-length: "528"
+pages: 528
 year: 1992
 author:
   - "[[Kevin Kelly]]"

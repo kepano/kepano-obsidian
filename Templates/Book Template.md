@@ -2,16 +2,17 @@
 categories:
   - "[[Books]]"
 author: []
-cover: 
+cover:
 genre: []
-length: 
-isbn: 
-isbn13: 
-year: 
-rating: 
+pages:
+isbn:
+isbn13:
+year:
+rating:
 topics: []
-created: {{date}}
-last: 
+created:
+  "{ date }":
+last:
 via: ""
 tags:
   - books
