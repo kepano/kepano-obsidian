@@ -1,17 +1,28 @@
 filters:
   and:
-    - contains(genre, concat("[[", this.file.name, "]]"))
-display:
-  property.categories: Categories
-  property.rating: Rating
-  property.last: Last
-  file.name: Name
+    - list(genre).contains(this)
+properties:
+  note.rating:
+    displayName: Rating
+  note.categories:
+    displayName: Category
+  note.last:
+    displayName: Last
+  file.name:
+    displayName: Name
 views:
   - type: table
-    name: Table
+    name: Genre
     order:
       - file.name
-      - categories
       - rating
+      - categories
       - last
-    sort: []
+    sort:
+      - column: note.rating
+        direction: DESC
+      - column: note.last
+        direction: DESC
+    columnSize:
+      file.name: 248
+      note.categories: 170

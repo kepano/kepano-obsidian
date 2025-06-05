@@ -14,4 +14,4 @@ height: 400px
 
 ## Places
 
-![[Places.base]]
+![[Places.base#Type]]

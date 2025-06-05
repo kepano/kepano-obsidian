@@ -12,5 +12,3 @@ tags:
   - games
   - references
 ---
-## [[{{date}}]]
-

@@ -1,10 +1,12 @@
 filters:
   and:
-    - contains(property.categories, "[[Podcasts]]")
-    - not(contains(file.name, "Template"))
-display:
-  file.name: Podcast
-  property.host: Host
+    - note.categories.contains(link("Podcasts"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Podcast
+  note.host:
+    displayName: Host
 views:
   - type: table
     name: Table

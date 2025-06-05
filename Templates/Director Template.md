@@ -8,4 +8,4 @@ created: {{date}}
 ---
 ## Movies
 
-![[Movies.base]]
+![[Movies.base#Director]]

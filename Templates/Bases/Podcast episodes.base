@@ -1,14 +1,22 @@
 filters:
   and:
-    - contains(property.categories, "[[Podcast episodes]]")
-    - not(contains(file.name, "Template"))
-display:
-  file.name: Podcast
-  property.show: Show
-  property.guests: Guests
-  property.episode: Episode
-  property.rating: Rating
-  property.published: Published
+    - note.categories.contains(link("Podcast episodes"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Podcast
+  note.show:
+    displayName: Show
+  note.guests:
+    displayName: Guests
+  note.episode:
+    displayName: Episode
+  note.rating:
+    displayName: Rating
+  note.published:
+    displayName: Published
+  note.guest:
+    displayName: Guest
 views:
   - type: table
     name: All episodes
@@ -19,23 +27,26 @@ views:
       - episode
       - rating
       - published
+    sort:
+      - column: note.published
+        direction: DESC
   - type: table
     name: Show
     filters:
       and:
-        - contains(show, concat("[[", this.file.name, "]]"))
+        - list(show).contains(this)
     order:
       - file.name
       - show
-      - guests
       - episode
       - rating
       - published
+      - guest
   - type: table
     name: Guest
     filters:
       and:
-        - contains(guests, concat("[[", this.file.name, "]]"))
+        - list(guest).contains(this)
     order:
       - file.name
       - show

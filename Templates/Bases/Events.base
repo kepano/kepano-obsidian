@@ -1,29 +1,22 @@
 filters:
   and:
-    - contains(property.categories, "[[Events]]")
-    - not(contains(file.name, "Template"))
-display:
-  file.name: Event
-  property.loc: Location
+    - categories.contains(link("Events"))
+    - '!file.name.contains("Template")'
+properties:
+  note.end:
+    displayName: End
+  note.loc:
+    displayName: Location
+  note.start:
+    displayName: Start
 views:
   - type: table
     name: Events
     order:
       - file.name
-      - loc
       - start
-  - type: table
-    name: Type
-    filters:
-      and:
-        - contains(type, concat("[[", this.file.name, "]]"))
-    order:
-      - file.name
+      - end
       - loc
-      - start
-    columnSize:
-      file.name: 226
-      property.loc: 199
     sort:
-      - column: property.start
+      - column: note.start
         direction: DESC

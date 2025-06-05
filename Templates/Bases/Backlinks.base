@@ -1,14 +1,31 @@
 filters:
   and:
-    - linksTo(file.file, this.file.path)
-display:
-  property.category: Category
-  file.name: Name
-  property.created: Created
+    - file.hasLink(this)
+formulas:
+  Path: file.path
+properties:
+  note.created:
+    displayName: Date
+  file.name:
+    displayName: Title
+  note.categories:
+    displayName: Categories
 views:
   - type: table
     name: Backlinks
     order:
       - file.name
-      - category
+      - categories
       - created
+    sort:
+      - column: note.created
+        direction: DESC
+  - type: table
+    name: Recent entries
+    order:
+      - file.name
+      - created
+    sort:
+      - column: note.created
+        direction: DESC
+    limit: 20

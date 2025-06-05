@@ -1,28 +1,23 @@
 filters:
   and:
-    - not(contains(file.name, "Template"))
-    - contains(property.categories, "[[Shows]]")
-display:
-  file.name: Name
-  property.last: Last
-  property.rating: Rating
-  property.year: Year
-  property.director: Director
-  property.genre: Genre
-  property.cast: Cast
+    - '!file.name.contains("Template")'
+    - note.categories.contains(link("Shows"))
+properties:
+  file.name:
+    displayName: Name
+  note.last:
+    displayName: Last
+  note.rating:
+    displayName: Rating
+  note.year:
+    displayName: Year
+  note.director:
+    displayName: Director
+  note.genre:
+    displayName: Genre
+  note.cast:
+    displayName: Cast
 views:
-  - type: table
-    name: Favorites
-    filters:
-      and:
-        - property.rating > 6
-    order:
-      - file.name
-      - year
-      - rating
-      - last
-      - director
-      - genre
   - type: table
     name: All
     order:
@@ -33,15 +28,29 @@ views:
       - director
       - genre
     sort:
+      - column: note.rating
+        direction: DESC
       - column: file.name
         direction: ASC
-      - column: property.director
+      - column: note.director
         direction: ASC
+  - type: table
+    name: Favorites
+    filters:
+      and:
+        - note.rating > 6
+    order:
+      - file.name
+      - year
+      - rating
+      - last
+      - director
+      - genre
   - type: table
     name: Last seen
     filters:
       and:
-        - not(empty(property.last))
+        - not(empty(note.last))
     order:
       - file.name
       - year
@@ -50,14 +59,14 @@ views:
       - director
       - genre
     sort:
-      - column: property.last
+      - column: note.last
         direction: DESC
     limit: 20
   - type: table
     name: Actor
     filters:
       and:
-        - contains(cast, concat("[[", this.file.name, "]]"))
+        - list(cast).contains(this)
     order:
       - file.name
       - year
@@ -67,7 +76,7 @@ views:
     name: Genre
     filters:
       and:
-        - contains(genre, concat("[[", this.file.name, "]]"))
+        - list(genre).contains(this)
     order:
       - file.name
       - year
@@ -77,7 +86,7 @@ views:
     name: Director
     filters:
       and:
-        - contains(director, concat("[[", this.file.name, "]]"))
+        - list(director).contains(this)
     order:
       - file.name
       - year

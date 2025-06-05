@@ -1,10 +1,12 @@
 filters:
   and:
-    - contains(property.categories, "[[People]]")
-    - not(contains(file.name, "Template"))
-display:
-  file.name: Name
-  property.tags: Tags
+    - '!file.name.contains("Template")'
+    - note.tags.contains("people")
+properties:
+  file.name:
+    displayName: Name
+  note.tags:
+    displayName: Tags
 views:
   - type: table
     name: Table

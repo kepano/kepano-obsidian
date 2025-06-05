@@ -7,4 +7,4 @@ created: {{date}}
 ---
 ## Albums
 
-![[Albums.base#Related albums]]
+![[Albums.base#Artist]]

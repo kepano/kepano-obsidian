@@ -1,21 +1,30 @@
 filters:
   and:
-    - contains(categories, concat("[[", this.file.name, "]]"))
-    - not(contains(file.name, "Template"))
-display:
-  file.name: Name
-  property.author: Author
-  property.type: Type
-  property.ingredients: Ingredients
-  property.cuisine: Cuisine
-  property.rating: Rating
+    - note.categories.contains(link("Recipes"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Name
+  note.author:
+    displayName: Author
+  note.type:
+    displayName: Type
+  note.ingredients:
+    displayName: Ingredients
+  note.cuisine:
+    displayName: Cuisine
+  note.rating:
+    displayName: Rating
 views:
   - type: table
     name: Recipes
     order:
       - file.name
       - type
+      - cuisine
       - author
       - ingredients
-      - cuisine
       - rating
+    columnSize:
+      note.type: 201
+      note.cuisine: 174

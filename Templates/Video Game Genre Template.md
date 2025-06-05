@@ -2,4 +2,4 @@
 tags:
   - games/genres
 ---
-![[Games.base]]
+![[Games.base#Genre]]

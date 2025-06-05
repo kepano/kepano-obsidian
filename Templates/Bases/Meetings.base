@@ -1,12 +1,16 @@
 filters:
   and:
-    - contains(property.categories, "[[Meetings]]")
-    - not(contains(file.name, "Template"))
-display:
-  property.date: Date
-  property.people: People
-  property.type: Type
-  file.name: Meeting
+    - note.categories.contains(link("Meetings"))
+    - '!file.name.contains("Template")'
+properties:
+  note.date:
+    displayName: Date
+  note.people:
+    displayName: People
+  note.type:
+    displayName: Type
+  file.name:
+    displayName: Meeting
 views:
   - type: table
     name: Meetings
@@ -16,18 +20,18 @@ views:
       - type
       - people
     sort:
-      - column: property.date
+      - column: note.date
         direction: ASC
   - type: table
     name: Person
     filters:
       and:
-        - contains(people, concat("[[", this.file.name, "]]"))
+        - list(people).contains(this)
     order:
       - file.name
       - date
       - type
       - people
     sort:
-      - column: property.date
+      - column: note.date
         direction: ASC

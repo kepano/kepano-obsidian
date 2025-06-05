@@ -13,4 +13,3 @@ rating:
 published: 
 last: {{date}}
 ---
-- 

@@ -2,4 +2,4 @@
 tags:
   - movies/genres
 ---
-![[Movies.base]]
+![[Movies.base#Genre]]

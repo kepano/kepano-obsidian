@@ -17,5 +17,3 @@ tags:
   - references
 ---
 
-[[{{date}}]]
-

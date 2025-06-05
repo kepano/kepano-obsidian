@@ -1,27 +1,38 @@
 filters:
   and:
-    - contains(property.categories, "[[Trips]]")
-    - not(contains(file.name, "Template"))
-display:
-  property.loc: Location
-  property.start: Start
-  property.end: End
-  file.name: Trip
+    - note.categories.contains(link("Trips"))
+    - '!file.name.contains("Template")'
+properties:
+  note.start:
+    displayName: Start
+  note.end:
+    displayName: End
+  file.name:
+    displayName: Trip
+  note.loc:
+    displayName: Location
 views:
   - type: table
-    name: Trips
-    order:
-      - file.name
-      - loc
-      - start
-      - end
-  - type: table
-    name: Related trips
+    name: All trips
     filters:
       and:
-        - contains(loc, concat("[[", this.file.name, "]]"))
+        - '!file.name.contains("Planning")'
     order:
       - file.name
+      - start
+      - end
       - loc
+    sort:
+      - column: note.end
+        direction: DESC
+    columnSize:
+      file.name: 255
+  - type: table
+    name: Location
+    filters:
+      and:
+        - list(loc).contains(this)
+    order:
+      - file.name
       - start
       - end

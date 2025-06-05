@@ -1,0 +1,39 @@
+filters:
+  and:
+    - rating > 0
+properties:
+  note.rating:
+    displayName: Rating
+  note.last:
+    displayName: Last
+  file.name:
+    displayName: Name
+  note.categories:
+    displayName: Categories
+views:
+  - type: table
+    name: Ratings
+    order:
+      - file.name
+      - rating
+      - last
+      - categories
+    sort:
+      - column: note.last
+        direction: DESC
+    columnSize:
+      file.name: 238
+  - type: table
+    name: Recent
+    filters:
+      and:
+        - last > now() - "60d"
+    order:
+      - file.name
+      - rating
+      - last
+      - categories
+    sort:
+      - column: note.last
+        direction: DESC
+    limit: 100

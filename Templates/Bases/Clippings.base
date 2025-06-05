@@ -1,19 +1,19 @@
 filters:
   and:
-    - contains(property.categories, "[[Clippings]]")
-    - not(contains(file.name, "Template"))
-display:
-  file.name: Title
-  property.author: Author
-  property.created: Clipped
-  property.published: Published
+    - note.categories.contains(link("Clippings"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Title
+  note.author:
+    displayName: Author
+  note.created:
+    displayName: Clipped
+  note.published:
+    displayName: Published
 views:
   - type: table
     name: Clippings
-    filters:
-      and:
-        - contains(categories, concat("[[", this.file.name, "]]"))
-        - not(contains(file.name, "Template"))
     order:
       - file.name
       - author
@@ -26,7 +26,7 @@ views:
     name: Author
     filters:
       and:
-        - contains(author, concat("[[", this.file.name, "]]"))
+        - list(author).contains(this)
     order:
       - file.name
       - author

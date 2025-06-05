@@ -1,13 +1,18 @@
 filters:
   and:
-    - contains(categories, concat("[[", this.file.name, "]]"))
-    - not(contains(file.name, "Template"))
-display:
-  property.status: Status
-  property.url: URL
-  file.name: Name
-  property.type: Type
-  property.year: Year
+    - '!file.name.contains("Template")'
+    - note.categories.contains(link("Projects"))
+properties:
+  note.status:
+    displayName: Status
+  note.url:
+    displayName: URL
+  file.name:
+    displayName: Name
+  note.type:
+    displayName: Type
+  note.year:
+    displayName: Year
 views:
   - type: table
     name: Table
@@ -17,3 +22,11 @@ views:
       - year
       - status
       - url
+    sort:
+      - column: note.status
+        direction: ASC
+      - column: note.year
+        direction: DESC
+    columnSize:
+      file.name: 209
+      note.type: 199

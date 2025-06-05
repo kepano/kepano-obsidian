@@ -1,21 +1,23 @@
 filters:
   and:
-    - contains(property.categories, "[[Games]]")
-    - not(contains(file.name, "Template"))
-display:
-  file.name: Games
-  property.year: Year
-  property.maker: Maker
-  property.rating: Rating
-  property.genre: Genre
-  property.last: Last played
+    - note.categories.contains(link("Games"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Games
+  note.year:
+    displayName: Year
+  note.maker:
+    displayName: Maker
+  note.rating:
+    displayName: Rating
+  note.genre:
+    displayName: Genre
+  note.last:
+    displayName: Last played
 views:
   - type: table
     name: Games
-    filters:
-      and:
-        - contains(property.categories, "[[Games]]")
-        - not(contains(file.name, "Template"))
     order:
       - file.name
       - maker
@@ -27,7 +29,7 @@ views:
     name: Studio
     filters:
       and:
-        - contains(maker, concat("[[", this.file.name, "]]"))
+        - list(maker).contains(this)
     order:
       - file.name
       - maker
@@ -39,7 +41,7 @@ views:
     name: Genre
     filters:
       and:
-        - contains(genre, concat("[[", this.file.name, "]]"))
+        - list(genre).contains(this)
     order:
       - file.name
       - maker

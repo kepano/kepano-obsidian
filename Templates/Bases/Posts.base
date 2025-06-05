@@ -1,15 +1,21 @@
-display:
-  file.name: Title
-  property.status: Status
-  property.published: Published
+properties:
+  file.name:
+    displayName: Title
+  note.status:
+    displayName: Status
+  note.published:
+    displayName: Published
 views:
   - type: table
-    name: Table
+    name: All
     filters:
       and:
-        - contains(categories, concat("[[", this.file.name, "]]"))
-        - not(contains(file.name, "Template"))
+        - list(categories).contains(link("Posts"))
+        - '!file.name.contains("Template")'
     order:
       - file.name
       - status
       - published
+    sort:
+      - column: note.published
+        direction: DESC

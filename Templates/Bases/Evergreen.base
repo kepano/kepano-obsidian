@@ -1,13 +1,18 @@
-display:
-  file.name: Name
-  property.created: Created
+filters:
+  and:
+    - tags.contains("0🌲")
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Name
+  note.created:
+    displayName: Created
 views:
   - type: table
-    name: Table
-    filters:
-      and:
-        - contains(property.tags, "0🌲")
-        - not(contains(file.name, "Template"))
+    name: Evergreen
     order:
       - file.name
       - created
+    sort:
+      - column: note.created
+        direction: DESC

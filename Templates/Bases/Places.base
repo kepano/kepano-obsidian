@@ -1,52 +1,93 @@
 filters:
   and:
-    - contains(property.categories, "[[Places]]")
-    - not(contains(file.name, "Template"))
-display:
-  property.type: Type
-  property.rating: Rating
-  property.loc: Location
-  file.name: Name
-  property.last: Last
+    - note.categories.contains(link("Places"))
+    - '!file.name.contains("Template")'
+properties:
+  note.type:
+    displayName: Type
+  note.rating:
+    displayName: Rating
+  note.loc:
+    displayName: Location
+  file.name:
+    displayName: Name
+  note.last:
+    displayName: Last
 views:
   - type: table
     name: Places
     order:
       - file.name
+      - rating
       - loc
       - type
-      - rating
       - last
     sort:
-      - column: property.loc
+      - column: note.last
+        direction: DESC
+      - column: note.type
         direction: ASC
+      - column: note.loc
+        direction: ASC
+    columnSize:
+      file.name: 162
+      note.loc: 145
+      note.type: 199
   - type: table
     name: Location
     filters:
       and:
-        - contains(loc, concat("[[", this.file.name, "]]"))
+        - list(loc).contains(this)
     order:
       - file.name
       - type
       - rating
       - last
     sort:
-      - column: property.last
+      - column: note.rating
         direction: DESC
-      - column: property.loc
+      - column: note.last
+        direction: DESC
+      - column: note.loc
         direction: ASC
+    columnSize:
+      note.type: 197
   - type: table
     name: Type
     filters:
       and:
-        - contains(type, concat("[[", this.file.name, "]]"))
+        - list(type).contains(this)
     order:
       - file.name
       - type
       - rating
       - last
     sort:
-      - column: property.last
+      - column: note.last
         direction: DESC
-      - column: property.loc
+      - column: note.loc
         direction: ASC
+    columnSize:
+      note.type: 153
+  - type: table
+    name: Related
+    filters:
+      and:
+        - file.hasLink(this)
+    order:
+      - file.name
+      - rating
+      - loc
+      - type
+      - last
+    sort:
+      - column: note.last
+        direction: DESC
+      - column: note.type
+        direction: ASC
+      - column: note.loc
+        direction: ASC
+    columnSize:
+      file.name: 162
+      note.loc: 145
+      note.type: 199

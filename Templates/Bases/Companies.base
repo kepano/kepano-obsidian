@@ -1,13 +1,22 @@
-display:
-  file.name: Company
-  property.url: Link
+filters:
+  and:
+    - categories.contains(link("Companies"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Company
+  property.url:
+    displayName: Link
+  note.url:
+    displayName: URL
+  note.people:
+    displayName: People
 views:
   - type: table
-    name: Table
-    filters:
-      and:
-        - contains(categories, concat("[[", this.file.name, "]]"))
-        - not(contains(file.name, "Template"))
+    name: Companies
     order:
       - file.name
       - url
+      - people
+    columnSize:
+      note.url: 239

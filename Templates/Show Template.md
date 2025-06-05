@@ -11,5 +11,3 @@ tags:
   - shows
   - references
 ---
-## [[{{date}}]]
-

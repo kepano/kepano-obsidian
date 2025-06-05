@@ -11,4 +11,3 @@ tags:
   - places
   - restaurants
 ---
-## [[{{date}}]]

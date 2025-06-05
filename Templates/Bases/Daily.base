@@ -1,28 +1,63 @@
 filters:
   or:
-    - linksTo(file.file, this.file.path)
-    - contains(property.created, this.file.name)
-    - contains(property.last, this.file.name)
-    - contains(property.end, this.file.name)
-display:
-  file.name: Entry
-  property.created: Created
-  property.categories: Categories
+    - file.name.contains(this.file.name)
+    - created == this.file.name
+    - start == this.file.name
+    - end == this.file.name
+    - file.links.contains(this.file)
+properties:
+  file.name:
+    displayName: Entry
+  note.categories:
+    displayName: Categories
+  note.created:
+    displayName: Created
+  note.tags:
+    displayName: Tags
 views:
   - type: table
     name: Daily notes
     filters:
       and:
-        - not(taggedWith(file.file, "daily"))
-        - not(taggedWith(file.file, "monthly"))
+        - '!tags.contains("daily")'
+        - '!tags.contains("monthly")'
+    order:
+      - file.name
+      - created
+      - categories
+      - tags
+    sort:
+      - column: note.tags
+        direction: ASC
+      - column: note.created
+        direction: DESC
+      - column: file.name
+        direction: ASC
+      - column: note.categories
+        direction: ASC
+  - type: table
+    name: Monthly
+    filters:
+      and:
+        - '!tags.contains("daily")'
+        - '!tags.contains("monthly")'
     order:
       - file.name
       - categories
       - created
     sort:
-      - column: file.name
+      - column: note.created
         direction: ASC
-      - column: property.created
+  - type: table
+    name: Yearly
+    filters:
+      and:
+        - '!tags.contains("daily")'
+        - '!tags.contains("monthly")'
+    order:
+      - file.name
+      - categories
+      - created
+    sort:
+      - column: note.created
         direction: ASC
-    columnSize:
-      file.name: 263

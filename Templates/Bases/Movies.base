@@ -1,28 +1,30 @@
 filters:
   and:
-    - not(contains(file.name, "Template"))
-    - contains(property.categories, "[[Movies]]")
-display:
-  file.name: Name
-  property.last: Last
-  property.rating: Rating
-  property.year: Year
-  property.director: Director
-  property.genre: Genre
-  property.cast: Cast
+    - categories.contains(link("Movies"))
+    - '!file.name.contains("Template")'
+formulas: {}
+properties:
+  file.name:
+    displayName: Name
+  note.last:
+    displayName: Last
+  note.rating:
+    displayName: Rating
+  note.year:
+    displayName: Year
+  note.director:
+    displayName: Director
+  note.genre:
+    displayName: Genre
+  note.cast:
+    displayName: Cast
+  note.scoreImdb:
+    displayName: IMDB
+  note.scoreRT:
+    displayName: RT
+  note.runtime:
+    displayName: Runtime
 views:
-  - type: table
-    name: Favorites
-    filters:
-      and:
-        - property.rating > 6
-    order:
-      - file.name
-      - year
-      - rating
-      - last
-      - director
-      - genre
   - type: table
     name: All
     order:
@@ -30,18 +32,77 @@ views:
       - year
       - rating
       - last
+      - plot
+      - genre
+      - director
+    sort:
+      - column: note.director
+        direction: ASC
+      - column: formula.test
+        direction: DESC
+      - column: note.plot
+        direction: ASC
+    columnSize:
+      note.plot: 233
+      note.genre: 261
+  - type: table
+    name: To-watch
+    filters:
+      and:
+        - empty(note.last)
+        - empty(note.rating)
+    order:
+      - file.name
+      - year
+      - scoreImdb
+      - runtime
+      - scoreRT
+      - watchlist
       - director
       - genre
     sort:
+      - column: note.scoreImdb
+        direction: DESC
+      - column: note.scoreRT
+        direction: DESC
+      - column: note.watchlist
+        direction: DESC
       - column: file.name
         direction: ASC
-      - column: property.director
+      - column: note.director
         direction: ASC
+    columnSize:
+      file.name: 283
+      note.year: 68
+      note.scoreRT: 67
+      note.director: 238
+  - type: table
+    name: Favorites
+    filters:
+      and:
+        - note.rating > 6
+    order:
+      - file.name
+      - director
+      - year
+      - genre
+      - rating
+      - ratingImdb
+      - last
+    sort:
+      - column: file.name
+        direction: ASC
+      - column: note.ratingImdb
+        direction: DESC
+    columnSize:
+      file.name: 283
+      note.director: 221
+      note.year: 68
   - type: table
     name: Last seen
     filters:
       and:
-        - not(empty(property.last))
+        - note.last != ""
     order:
       - file.name
       - year
@@ -50,14 +111,14 @@ views:
       - director
       - genre
     sort:
-      - column: property.last
+      - column: note.last
         direction: DESC
-    limit: 20
+    limit: 15
   - type: table
     name: Actor
     filters:
       and:
-        - contains(cast, concat("[[", this.file.name, "]]"))
+        - list(cast).contains(this)
     order:
       - file.name
       - year
@@ -67,19 +128,69 @@ views:
     name: Genre
     filters:
       and:
-        - contains(genre, concat("[[", this.file.name, "]]"))
+        - list(genre).contains(this)
     order:
       - file.name
+      - rating
       - year
       - director
+      - last
       - genre
+    columnSize:
+      note.director: 166
+      note.last: 115
+    sort:
+      - column: note.last
+        direction: DESC
+      - column: note.genre
+        direction: ASC
+      - column: note.rating
+        direction: DESC
   - type: table
     name: Director
     filters:
       and:
-        - contains(director, concat("[[", this.file.name, "]]"))
+        - list(director).contains(this)
     order:
       - file.name
       - year
+      - rating
+      - last
       - cast
       - genre
+    sort:
+      - column: note.last
+        direction: DESC
+      - column: note.rating
+        direction: ASC
+      - column: note.year
+        direction: DESC
+    columnSize:
+      file.name: 186
+      note.year: 79
+      note.rating: 96
+      note.genre: 243
+  - type: table
+    name: Soundtrack
+    filters:
+      and:
+        - list(music).contains(this)
+    order:
+      - file.name
+      - year
+      - rating
+      - last
+      - cast
+      - genre
+    sort:
+      - column: note.last
+        direction: DESC
+      - column: note.rating
+        direction: ASC
+      - column: note.year
+        direction: DESC
+    columnSize:
+      file.name: 186
+      note.year: 79
+      note.rating: 96
+      note.genre: 243

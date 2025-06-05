@@ -3,4 +3,4 @@ tags:
   - music/genres
 ---
 
-![[Albums.base]]
+![[Albums.base#Genre]]

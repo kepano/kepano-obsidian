@@ -8,4 +8,4 @@ tags:
 ---
 ## Episodes
 
-![[Podcast episodes.base#Podcast episodes]]
+![[Podcast episodes.base#Show]]

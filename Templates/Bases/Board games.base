@@ -1,11 +1,14 @@
 filters:
   and:
-    - contains(property.categories, "[[Board games]]")
-    - not(contains(file.name, "Template"))
-display:
-  file.name: Game
-  property.rating: Rating
-  property.last: Last
+    - categories.contains(link("Board games"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Game
+  note.rating:
+    displayName: Rating
+  note.last:
+    displayName: Last
 views:
   - type: table
     name: Table

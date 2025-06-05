@@ -1,10 +1,12 @@
 filters:
   and:
-    - contains(property.tags, "journal")
-    - not(contains(file.name, "Template"))
-display:
-  file.name: Entry
-  property.created: Created
+    - '!file.name.contains("Template")'
+    - tags.contains("journal")
+properties:
+  file.name:
+    displayName: Entry
+  note.created:
+    displayName: Created
 views:
   - type: table
     name: Table

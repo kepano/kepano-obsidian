@@ -11,5 +11,3 @@ tags:
   - episodes
   - references
 ---
-## [[{{date}}]]
-

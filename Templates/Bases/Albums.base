@@ -1,21 +1,23 @@
 filters:
   and:
-    - contains(property.categories, "[[Albums]]")
-    - not(contains(file.name, "Template"))
-display:
-  file.name: Album
-  property.year: Year
-  property.artist: Artist
-  property.created: Added
-  property.rating: Rating
-  property.genre: Genre
+    - note.categories.contains(link("Albums"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Album
+  note.year:
+    displayName: Year
+  note.artist:
+    displayName: Artist
+  note.created:
+    displayName: Added
+  note.rating:
+    displayName: Rating
+  note.genre:
+    displayName: Genre
 views:
   - type: table
     name: Albums
-    filters:
-      and:
-        - contains(categories, concat("[[", this.file.name, "]]"))
-        - not(contains(file.name, "Template"))
     order:
       - file.name
       - artist
@@ -26,7 +28,7 @@ views:
     name: Artist
     filters:
       and:
-        - contains(artist, concat("[[", this.file.name, "]]"))
+        - list(artist).contains(this)
     order:
       - file.name
       - artist
@@ -37,7 +39,7 @@ views:
     name: Genre
     filters:
       and:
-        - contains(genre, concat("[[", this.file.name, "]]"))
+        - list(genre).contains(this)
     order:
       - file.name
       - artist

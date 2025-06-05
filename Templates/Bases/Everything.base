@@ -1,0 +1,24 @@
+filters:
+  and:
+    - file.ext.contains("md")
+properties:
+  file.name:
+    displayName: Name
+  note.categories:
+    displayName: Categories
+views:
+  - type: table
+    name: Notes
+    order:
+      - file.name
+      - categories
+  - type: table
+    name: All files
+    order:
+      - file.name
+      - file.mtime
+      - file.path
+      - file.ext
+    sort:
+      - column: file.path
+        direction: ASC

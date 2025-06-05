@@ -7,4 +7,4 @@ tags:
 ---
 ## Entries
 
-![[Daily.base]]
+![[Daily.base#Monthly]]

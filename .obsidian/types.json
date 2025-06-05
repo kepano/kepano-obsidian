@@ -49,6 +49,7 @@
     "loc": "multitext",
     "monthly-uses": "number",
     "runtime": "number",
-    "pages": "number"
+    "pages": "number",
+    "acquired": "date"
   }
 }
