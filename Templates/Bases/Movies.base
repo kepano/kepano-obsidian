@@ -24,6 +24,8 @@ properties:
     displayName: RT
   note.runtime:
     displayName: Runtime
+  note.watchlist:
+    displayName: Added
 views:
   - type: table
     name: All
@@ -49,14 +51,14 @@ views:
     name: To-watch
     filters:
       and:
-        - empty(note.last)
-        - empty(note.rating)
+        - last.isEmpty()
+        - rating.isEmpty()
     order:
       - file.name
       - year
       - scoreImdb
-      - runtime
       - scoreRT
+      - runtime
       - watchlist
       - director
       - genre
@@ -193,4 +195,40 @@ views:
       file.name: 186
       note.year: 79
       note.rating: 96
+      note.genre: 243
+  - type: table
+    name: Theater
+    filters:
+      and:
+        - file.links.contains(this.file)
+    order:
+      - file.name
+      - rating
+      - last
+      - year
+      - scoreImdb
+      - runtime
+      - scoreRT
+      - watchlist
+      - director
+      - genre
+    sort:
+      - column: note.last
+        direction: DESC
+      - column: note.scoreImdb
+        direction: DESC
+      - column: note.scoreRT
+        direction: DESC
+      - column: note.watchlist
+        direction: DESC
+      - column: file.name
+        direction: ASC
+      - column: note.director
+        direction: ASC
+    columnSize:
+      file.name: 283
+      note.rating: 94
+      note.year: 68
+      note.scoreRT: 67
+      note.director: 238
       note.genre: 243
