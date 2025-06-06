@@ -35,3 +35,16 @@ views:
     sort:
       - column: note.date
         direction: ASC
+  - type: table
+    name: Type
+    filters:
+      and:
+        - list(type).contains(this)
+    order:
+      - file.name
+      - date
+      - type
+      - people
+    sort:
+      - column: note.date
+        direction: DESC
