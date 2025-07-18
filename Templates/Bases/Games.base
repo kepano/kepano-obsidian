@@ -2,19 +2,13 @@ filters:
   and:
     - note.categories.contains(link("Games"))
     - '!file.name.contains("Template")'
-properties:
-  file.name:
-    displayName: Games
-  note.year:
-    displayName: Year
-  note.maker:
-    displayName: Maker
-  note.rating:
-    displayName: Rating
-  note.genre:
-    displayName: Genre
-  note.last:
-    displayName: Last played
+display:
+  file.name: Games
+  note.year: Year
+  note.maker: Maker
+  note.rating: Rating
+  note.genre: Genre
+  note.last: Last played
 views:
   - type: table
     name: Games

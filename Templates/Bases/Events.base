@@ -20,3 +20,27 @@ views:
     sort:
       - property: start
         direction: DESC
+  - type: table
+    name: Type
+    filters:
+      and:
+        - list(type).contains(this)
+    order:
+      - file.name
+      - start
+      - loc
+    sort:
+      - property: start
+        direction: DESC
+  - type: table
+    name: Location
+    filters:
+      and:
+        - list(loc).contains(this)
+    order:
+      - file.name
+      - start
+      - loc
+    sort:
+      - property: start
+        direction: DESC

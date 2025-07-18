@@ -23,9 +23,9 @@ views:
       - status
       - url
     sort:
-      - property: status
+      - column: note.status
         direction: ASC
-      - property: year
+      - column: note.year
         direction: DESC
     columnSize:
       file.name: 209

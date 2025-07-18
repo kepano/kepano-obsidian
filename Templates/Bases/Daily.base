@@ -50,6 +50,8 @@ views:
       - categories
       - created
     sort:
+      - property: file.name
+        direction: ASC
       - property: created
         direction: DESC
   - type: table

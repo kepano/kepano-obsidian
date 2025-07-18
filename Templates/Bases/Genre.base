@@ -1,15 +1,11 @@
 filters:
   and:
     - list(genre).contains(this)
-properties:
-  note.rating:
-    displayName: Rating
-  note.categories:
-    displayName: Category
-  note.last:
-    displayName: Last
-  file.name:
-    displayName: Name
+display:
+  note.rating: Rating
+  note.categories: Category
+  note.last: Last
+  file.name: Name
 views:
   - type: table
     name: Genre
@@ -19,9 +15,9 @@ views:
       - categories
       - last
     sort:
-      - property: rating
+      - column: note.rating
         direction: DESC
-      - property: last
+      - column: note.last
         direction: DESC
     columnSize:
       file.name: 248

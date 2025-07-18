@@ -1,6 +1,6 @@
 filters:
   and:
-    - note.categories.contains(link("Meetings"))
+    - categories.contains(link("Meetings"))
     - '!file.name.contains("Template")'
 properties:
   note.date:
@@ -11,6 +11,8 @@ properties:
     displayName: Type
   file.name:
     displayName: Meeting
+  note.org:
+    displayName: Org
 views:
   - type: table
     name: Meetings
@@ -43,8 +45,8 @@ views:
     order:
       - file.name
       - date
-      - type
       - people
+      - org
     sort:
       - property: date
         direction: DESC

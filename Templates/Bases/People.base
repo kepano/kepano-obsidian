@@ -2,14 +2,32 @@ filters:
   and:
     - '!file.name.contains("Template")'
     - note.tags.contains("people")
+formulas:
+  Age: (now() - birthday).years.floor()
 properties:
   file.name:
     displayName: Name
   note.tags:
     displayName: Tags
+  note.birthday:
+    displayName: Birthday
 views:
   - type: table
-    name: Table
+    name: All people
     order:
       - file.name
       - tags
+      - birthday
+      - formula.Age
+    columnSize:
+      note.tags: 209
+      formula.Age: 99
+    sort:
+      - column: file.name
+        direction: ASC
+      - column: note.tags
+        direction: ASC
+      - column: formula.Age
+        direction: DESC
+      - column: note.birthday
+        direction: DESC

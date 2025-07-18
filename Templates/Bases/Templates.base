@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.path.contains("/Templates")
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - categories
+    sort: []
+    columnSize:
+      file.name: 234

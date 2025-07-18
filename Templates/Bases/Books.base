@@ -23,7 +23,7 @@ views:
       - topics
       - last
     sort:
-      - column: file.name
+      - property: file.name
         direction: ASC
   - type: table
     name: Top rated

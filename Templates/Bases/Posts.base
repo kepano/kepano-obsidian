@@ -17,5 +17,5 @@ views:
       - status
       - published
     sort:
-      - property: published
+      - column: note.published
         direction: DESC

@@ -20,8 +20,10 @@ views:
       - created
       - published
     sort:
-      - column: clipped
+      - property: created
         direction: DESC
+    columnSize:
+      note.author: 140
   - type: table
     name: Author
     filters:
@@ -33,5 +35,5 @@ views:
       - created
       - published
     sort:
-      - column: clipped
+      - property: clipped
         direction: DESC

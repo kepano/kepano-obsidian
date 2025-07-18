@@ -74,6 +74,7 @@ views:
     filters:
       and:
         - file.hasLink(this)
+        - '!tags.containsAny("cities", "countries")'
     order:
       - file.name
       - rating
@@ -81,6 +82,8 @@ views:
       - type
       - last
     sort:
+      - property: rating
+        direction: DESC
       - property: last
         direction: DESC
       - property: type
@@ -89,5 +92,24 @@ views:
         direction: ASC
     columnSize:
       file.name: 162
+      note.rating: 65
       note.loc: 145
       note.type: 199
+  - type: table
+    name: Metatype
+    filters:
+      or:
+        - list(type).contains(this)
+        - list(type).containsAny(this.topics)
+    order:
+      - file.name
+      - type
+      - rating
+      - last
+    sort:
+      - property: last
+        direction: DESC
+      - property: loc
+        direction: ASC
+    columnSize:
+      note.type: 153

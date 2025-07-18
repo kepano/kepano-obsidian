@@ -32,19 +32,19 @@ views:
     order:
       - file.name
       - year
+      - director
       - rating
       - last
       - plot
       - genre
-      - director
     sort:
       - property: director
         direction: ASC
-      - column: formula.test
-        direction: DESC
       - property: plot
         direction: ASC
     columnSize:
+      file.name: 193
+      note.director: 205
       note.plot: 233
       note.genre: 261
   - type: table
@@ -69,7 +69,7 @@ views:
         direction: DESC
       - property: watchlist
         direction: DESC
-      - column: file.name
+      - property: file.name
         direction: ASC
       - property: director
         direction: ASC
@@ -92,7 +92,7 @@ views:
       - ratingImdb
       - last
     sort:
-      - column: file.name
+      - property: file.name
         direction: ASC
       - property: ratingImdb
         direction: DESC
@@ -104,7 +104,7 @@ views:
     name: Last seen
     filters:
       and:
-        - note.last != ""
+        - "!last.isEmpty()"
     order:
       - file.name
       - year
@@ -115,7 +115,9 @@ views:
     sort:
       - property: last
         direction: DESC
-    limit: 15
+      - property: file.name
+        direction: ASC
+    limit: 20
   - type: table
     name: Actor
     filters:
@@ -126,6 +128,10 @@ views:
       - year
       - director
       - genre
+      - ratingImdb
+    sort:
+      - property: ratingImdb
+        direction: DESC
   - type: table
     name: Genre
     filters:
@@ -138,9 +144,6 @@ views:
       - director
       - last
       - genre
-    columnSize:
-      note.director: 166
-      note.last: 115
     sort:
       - property: last
         direction: DESC
@@ -148,6 +151,9 @@ views:
         direction: ASC
       - property: rating
         direction: DESC
+    columnSize:
+      note.director: 166
+      note.last: 115
   - type: table
     name: Director
     filters:
@@ -221,7 +227,7 @@ views:
         direction: DESC
       - property: watchlist
         direction: DESC
-      - column: file.name
+      - property: file.name
         direction: ASC
       - property: director
         direction: ASC

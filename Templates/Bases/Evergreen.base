@@ -14,5 +14,5 @@ views:
       - file.name
       - created
     sort:
-      - property: created
+      - column: note.created
         direction: DESC
