@@ -18,5 +18,5 @@ views:
       - end
       - loc
     sort:
-      - column: note.start
+      - property: start
         direction: DESC

@@ -32,7 +32,7 @@ views:
       - rating
       - last
     sort:
-      - column: note.last
+      - property: last
         direction: DESC
   - type: table
     name: Author
@@ -44,7 +44,7 @@ views:
       - year
       - genre
     sort:
-      - column: note.genre
+      - property: genre
         direction: ASC
   - type: table
     name: Genre

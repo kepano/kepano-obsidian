@@ -18,7 +18,7 @@ views:
       - categories
       - created
     sort:
-      - column: note.created
+      - property: created
         direction: DESC
   - type: table
     name: Recent entries
@@ -26,6 +26,6 @@ views:
       - file.name
       - created
     sort:
-      - column: note.created
+      - property: created
         direction: DESC
     limit: 20

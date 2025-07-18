@@ -28,11 +28,11 @@ views:
       - director
       - genre
     sort:
-      - column: note.rating
+      - property: rating
         direction: DESC
       - column: file.name
         direction: ASC
-      - column: note.director
+      - property: director
         direction: ASC
   - type: table
     name: Favorites
@@ -59,7 +59,7 @@ views:
       - director
       - genre
     sort:
-      - column: note.last
+      - property: last
         direction: DESC
     limit: 20
   - type: table

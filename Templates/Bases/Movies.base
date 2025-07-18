@@ -38,11 +38,11 @@ views:
       - genre
       - director
     sort:
-      - column: note.director
+      - property: director
         direction: ASC
       - column: formula.test
         direction: DESC
-      - column: note.plot
+      - property: plot
         direction: ASC
     columnSize:
       note.plot: 233
@@ -63,15 +63,15 @@ views:
       - director
       - genre
     sort:
-      - column: note.scoreImdb
+      - property: scoreImdb
         direction: DESC
-      - column: note.scoreRT
+      - property: scoreRT
         direction: DESC
-      - column: note.watchlist
+      - property: watchlist
         direction: DESC
       - column: file.name
         direction: ASC
-      - column: note.director
+      - property: director
         direction: ASC
     columnSize:
       file.name: 283
@@ -94,7 +94,7 @@ views:
     sort:
       - column: file.name
         direction: ASC
-      - column: note.ratingImdb
+      - property: ratingImdb
         direction: DESC
     columnSize:
       file.name: 283
@@ -113,7 +113,7 @@ views:
       - director
       - genre
     sort:
-      - column: note.last
+      - property: last
         direction: DESC
     limit: 15
   - type: table
@@ -142,11 +142,11 @@ views:
       note.director: 166
       note.last: 115
     sort:
-      - column: note.last
+      - property: last
         direction: DESC
-      - column: note.genre
+      - property: genre
         direction: ASC
-      - column: note.rating
+      - property: rating
         direction: DESC
   - type: table
     name: Director
@@ -161,11 +161,11 @@ views:
       - cast
       - genre
     sort:
-      - column: note.last
+      - property: last
         direction: DESC
-      - column: note.rating
+      - property: rating
         direction: ASC
-      - column: note.year
+      - property: year
         direction: DESC
     columnSize:
       file.name: 186
@@ -185,11 +185,11 @@ views:
       - cast
       - genre
     sort:
-      - column: note.last
+      - property: last
         direction: DESC
-      - column: note.rating
+      - property: rating
         direction: ASC
-      - column: note.year
+      - property: year
         direction: DESC
     columnSize:
       file.name: 186
@@ -213,17 +213,17 @@ views:
       - director
       - genre
     sort:
-      - column: note.last
+      - property: last
         direction: DESC
-      - column: note.scoreImdb
+      - property: scoreImdb
         direction: DESC
-      - column: note.scoreRT
+      - property: scoreRT
         direction: DESC
-      - column: note.watchlist
+      - property: watchlist
         direction: DESC
       - column: file.name
         direction: ASC
-      - column: note.director
+      - property: director
         direction: ASC
     columnSize:
       file.name: 283

@@ -23,11 +23,11 @@ views:
       - type
       - last
     sort:
-      - column: note.last
+      - property: last
         direction: DESC
-      - column: note.type
+      - property: type
         direction: ASC
-      - column: note.loc
+      - property: loc
         direction: ASC
     columnSize:
       file.name: 162
@@ -44,11 +44,11 @@ views:
       - rating
       - last
     sort:
-      - column: note.rating
+      - property: rating
         direction: DESC
-      - column: note.last
+      - property: last
         direction: DESC
-      - column: note.loc
+      - property: loc
         direction: ASC
     columnSize:
       note.type: 197
@@ -63,9 +63,9 @@ views:
       - rating
       - last
     sort:
-      - column: note.last
+      - property: last
         direction: DESC
-      - column: note.loc
+      - property: loc
         direction: ASC
     columnSize:
       note.type: 153
@@ -81,11 +81,11 @@ views:
       - type
       - last
     sort:
-      - column: note.last
+      - property: last
         direction: DESC
-      - column: note.type
+      - property: type
         direction: ASC
-      - column: note.loc
+      - property: loc
         direction: ASC
     columnSize:
       file.name: 162

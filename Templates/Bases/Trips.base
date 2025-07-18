@@ -23,7 +23,7 @@ views:
       - end
       - loc
     sort:
-      - column: note.end
+      - property: end
         direction: DESC
     columnSize:
       file.name: 255

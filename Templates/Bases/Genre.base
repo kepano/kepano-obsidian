@@ -19,9 +19,9 @@ views:
       - categories
       - last
     sort:
-      - column: note.rating
+      - property: rating
         direction: DESC
-      - column: note.last
+      - property: last
         direction: DESC
     columnSize:
       file.name: 248

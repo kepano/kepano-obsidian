@@ -1,9 +1,9 @@
 filters:
   or:
     - file.name.contains(this.file.name)
-    - created == this.file.name
-    - start == this.file.name
-    - end == this.file.name
+    - created.toString().contains(this.file.name)
+    - start.toString().contains(this.file.name)
+    - end.toString().contains(this.file.name)
     - file.links.contains(this.file)
 properties:
   file.name:
@@ -27,14 +27,18 @@ views:
       - categories
       - tags
     sort:
-      - column: note.tags
+      - property: tags
         direction: ASC
-      - column: note.created
+      - property: created
         direction: DESC
-      - column: file.name
+      - property: file.name
         direction: ASC
-      - column: note.categories
+      - property: categories
         direction: ASC
+    columnSize:
+      file.name: 287
+      note.created: 128
+      note.categories: 119
   - type: table
     name: Monthly
     filters:
@@ -46,8 +50,8 @@ views:
       - categories
       - created
     sort:
-      - column: note.created
-        direction: ASC
+      - property: created
+        direction: DESC
   - type: table
     name: Yearly
     filters:
@@ -59,5 +63,5 @@ views:
       - categories
       - created
     sort:
-      - column: note.created
+      - property: created
         direction: ASC

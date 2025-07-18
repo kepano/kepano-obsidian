@@ -20,7 +20,7 @@ views:
       - type
       - people
     sort:
-      - column: note.date
+      - property: date
         direction: ASC
   - type: table
     name: Person
@@ -33,7 +33,7 @@ views:
       - type
       - people
     sort:
-      - column: note.date
+      - property: date
         direction: ASC
   - type: table
     name: Type
@@ -46,5 +46,5 @@ views:
       - type
       - people
     sort:
-      - column: note.date
+      - property: date
         direction: DESC

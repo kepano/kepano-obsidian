@@ -28,7 +28,7 @@ views:
       - rating
       - published
     sort:
-      - column: note.published
+      - property: published
         direction: DESC
   - type: table
     name: Show

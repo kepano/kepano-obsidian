@@ -3,9 +3,9 @@ filters:
     - note.categories.contains(link("Products"))
     - '!file.name.contains("Template")'
 formulas:
-  Owned: ((now() - acquired) / 2629746000).round()
+  Owned: ((now() - acquired).months).round()
   totalUses: monthlyUses * formula.Owned.round()
-  perUse: '"$" + (price / formula.totalUses).toFixed(2)'
+  perUse: (price / formula.totalUses).toFixed(2)
 properties:
   note.monthlyUses:
     displayName: Uses/month
@@ -38,22 +38,27 @@ views:
       - formula.Owned
       - formula.totalUses
       - type
+    sort:
+      - property: formula.perUse
+        direction: ASC
+      - property: formula.totalUses
+        direction: ASC
+      - property: acquired
+        direction: DESC
+      - property: file.name
+        direction: DESC
+      - property: rating
+        direction: DESC
+      - property: formula.Owned
+        direction: ASC
     columnSize:
       file.name: 209
+      note.acquired: 112
       note.price: 78
-      note.monthlyUses: 128
-      formula.perUse: 78
-      formula.Owned: 96
+      note.monthlyUses: 123
+      formula.perUse: 102
+      formula.Owned: 113
       formula.totalUses: 115
-    sort:
-      - column: note.acquired
-        direction: DESC
-      - column: note.monthlyUses
-        direction: DESC
-      - column: note.rating
-        direction: DESC
-      - column: formula.Owned
-        direction: ASC
   - type: table
     name: Cost per use
     filters:
@@ -61,28 +66,29 @@ views:
         - note.monthlyUses > 0
     order:
       - file.name
-      - rating
-      - formula.perUse
+      - acquired
       - monthlyUses
       - price
-      - formula.totalUses
       - formula.Owned
-      - acquired
+      - formula.totalUses
+      - formula.perUse
       - type
-    columnSize:
-      file.name: 209
-      formula.perUse: 77
-      note.monthlyUses: 82
-      note.price: 78
-      formula.totalUses: 122
-      formula.Owned: 96
+      - rating
     sort:
-      - column: formula.totalUses
+      - property: acquired
+        direction: ASC
+      - property: monthlyUses
         direction: DESC
-      - column: note.acquired
+      - property: rating
         direction: DESC
-      - column: note.monthlyUses
-        direction: DESC
+    columnSize:
+      file.name: 207
+      note.acquired: 112
+      note.monthlyUses: 131
+      note.price: 78
+      formula.Owned: 99
+      formula.totalUses: 100
+      formula.perUse: 93
   - type: table
     name: Maker
     filters:
@@ -98,19 +104,19 @@ views:
       - formula.Owned
       - acquired
       - type
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: formula.totalUses
+        direction: DESC
+      - property: acquired
+        direction: DESC
+      - property: monthlyUses
+        direction: DESC
     columnSize:
       file.name: 209
       note.monthlyUses: 82
       formula.totalUses: 115
-    sort:
-      - column: file.name
-        direction: ASC
-      - column: formula.totalUses
-        direction: DESC
-      - column: note.acquired
-        direction: DESC
-      - column: note.monthlyUses
-        direction: DESC
   - type: table
     name: Type
     filters:
@@ -126,18 +132,18 @@ views:
       - formula.Owned
       - acquired
       - type
+    sort:
+      - property: rating
+        direction: DESC
+      - property: file.name
+        direction: ASC
+      - property: formula.totalUses
+        direction: DESC
+      - property: acquired
+        direction: DESC
+      - property: monthlyUses
+        direction: DESC
     columnSize:
       file.name: 209
       note.monthlyUses: 82
       formula.totalUses: 115
-    sort:
-      - column: note.rating
-        direction: DESC
-      - column: file.name
-        direction: ASC
-      - column: formula.totalUses
-        direction: DESC
-      - column: note.acquired
-        direction: DESC
-      - column: note.monthlyUses
-        direction: DESC
