@@ -16,7 +16,7 @@ created: 2023-09-12
 ---
 ## Trips
 
-![[Trips.base#Related trips]]
+![[Trips.base#Location]]
 
 ## Map
 

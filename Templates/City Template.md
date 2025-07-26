@@ -16,7 +16,7 @@ location:
 ---
 ## Trips
 
-![[Trips.base#Related trips]]
+![[Trips.base#Location]]
 
 ## Map
 
