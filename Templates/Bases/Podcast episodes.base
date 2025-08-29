@@ -39,7 +39,7 @@ views:
     name: Guest
     filters:
       and:
-        - list(guest).contains(this)
+        - list(guests).contains(this)
     order:
       - file.name
       - show

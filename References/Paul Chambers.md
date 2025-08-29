@@ -8,4 +8,4 @@ created: 2023-09-13
 ---
 ## Albums
 
-![[Albums.base#Related albums]]
+![[Albums.base#Artist]]
