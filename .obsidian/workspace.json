@@ -1,0 +1,14 @@
+{
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": true,
+      "workspaces:Manage workspace layouts": true,
+      "bases:Create new base": true
+    }
+  }
+}

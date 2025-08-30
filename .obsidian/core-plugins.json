@@ -13,8 +13,8 @@
   "command-palette": true,
   "slash-command": false,
   "editor-status": true,
-  "markdown-importer": true,
-  "zk-prefixer": true,
+  "markdown-importer": false,
+  "zk-prefixer": false,
   "random-note": true,
   "outline": true,
   "word-count": false,
@@ -29,5 +29,5 @@
   "bookmarks": true,
   "footnotes": false,
   "bases": true,
-  "webviewer": false
+  "webviewer": true
 }
