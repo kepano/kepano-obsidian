@@ -2,7 +2,7 @@ filters:
   and:
     - file.path != this.file.path
 formulas:
-  LinksOverlap: list(this.file.links).filter(list(file.links).containsAny(value)).unique().length
+  LinksOverlap: formula.Related.length
   Related: list(this.file.links).filter(list(file.links).containsAny(value)).unique()
   BacklinksCount: file.backlinks.length
   TagsOverlap: list(this.file.tags).filter(list(file.tags).containsAny(value)).unique().length
