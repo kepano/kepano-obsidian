@@ -2,7 +2,6 @@ filters:
   and:
     - categories.contains(link("Movies"))
     - '!file.name.contains("Template")'
-formulas: {}
 properties:
   file.name:
     displayName: Name
