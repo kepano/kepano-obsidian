@@ -10,7 +10,7 @@ loc:
 rating: 
 created: {{date}}
 last: 
-location:
+coordinates:
   - "35.021041"
   - "135.7556075"
 ---
@@ -18,19 +18,7 @@ location:
 
 ![[Trips.base#Location]]
 
-## Map
-
-```leaflet
-id: kyoto
-minZoom: 10
-maxZoom: 20
-defaultZoom: 12
-markerTag:
-  - places
-height: 400px
-coordinates: [[Kyoto]]
-```
-
 ## Places
 
+![[Map.base#Location]]
 ![[Places.base#Location]]

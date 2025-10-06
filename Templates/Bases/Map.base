@@ -1,0 +1,78 @@
+filters:
+  and:
+    - categories.contains(link("Places"))
+    - '!file.name.contains("Template")'
+properties:
+  note.type:
+    displayName: Type
+  note.rating:
+    displayName: Rating
+  note.loc:
+    displayName: Location
+  file.name:
+    displayName: Name
+  note.last:
+    displayName: Last
+views:
+  - type: map
+    name: Map
+    order:
+      - file.name
+      - rating
+      - loc
+      - type
+      - last
+    sort:
+      - property: last
+        direction: DESC
+      - property: type
+        direction: ASC
+      - property: loc
+        direction: ASC
+    defaultZoom: 2
+    coordinates: note.coordinates
+  - type: map
+    name: Location
+    filters:
+      or:
+        - list(loc).contains(this)
+        - list(loc).containsAny(this.related)
+    order:
+      - file.name
+    sort:
+      - property: last
+        direction: DESC
+      - property: type
+        direction: ASC
+      - property: loc
+        direction: ASC
+    columnSize:
+      file.name: 162
+      note.rating: 84
+      note.loc: 145
+      note.type: 199
+    coordinates: note.coordinates
+    defaultZoom: 10.6
+  - type: map
+    name: Type
+    filters:
+      and:
+        - list(type).contains(this)
+    order:
+      - file.name
+      - rating
+      - type
+    sort:
+      - property: last
+        direction: DESC
+      - property: type
+        direction: ASC
+      - property: loc
+        direction: ASC
+    columnSize:
+      file.name: 162
+      note.rating: 84
+      note.loc: 145
+      note.type: 199
+    coordinates: note.coordinates
+    defaultZoom: 3.1

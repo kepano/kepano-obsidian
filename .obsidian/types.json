@@ -12,7 +12,7 @@
     "topics": "multitext",
     "rating": "number",
     "year": "number",
-    "location": "multitext",
+    "coordinates": "multitext",
     "model": "text",
     "lotsqft": "number",
     "isbn13": "number",
