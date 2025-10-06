@@ -21,4 +21,5 @@ coordinates:
 ## Places
 
 ![[Map.base#Location]]
+
 ![[Places.base#Location]]
