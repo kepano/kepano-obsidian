@@ -2,6 +2,9 @@ filters:
   and:
     - categories.contains(link("Places"))
     - '!file.name.contains("Template")'
+formulas:
+  Icon: list(type)[0].asFile().properties.icon
+  Color: list(type)[0].asFile().properties.color
 properties:
   note.type:
     displayName: Type
@@ -22,6 +25,7 @@ views:
       - loc
       - type
       - last
+      - formula.Icon
     sort:
       - property: last
         direction: DESC
@@ -31,6 +35,8 @@ views:
         direction: ASC
     defaultZoom: 2
     coordinates: note.coordinates
+    markerIcon: formula.Icon
+    markerColor: formula.Color
   - type: map
     name: Location
     filters:
@@ -53,6 +59,8 @@ views:
       note.type: 199
     coordinates: note.coordinates
     defaultZoom: 10.6
+    markerIcon: formula.Icon
+    markerColor: formula.Color
   - type: map
     name: Type
     filters:
@@ -62,6 +70,7 @@ views:
       - file.name
       - rating
       - type
+      - formula.Color
     sort:
       - property: last
         direction: DESC
@@ -76,3 +85,5 @@ views:
       note.type: 199
     coordinates: note.coordinates
     defaultZoom: 3.1
+    markerIcon: formula.Icon
+    markerColor: formula.Color
