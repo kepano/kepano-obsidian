@@ -1,9 +1,10 @@
 ---
+categories:
+  - "[[Quotes]]"
 attribution: []
-source: 
-created: {{date}}
-tags:
-  - quotes
+source:
+created:
+  "{ date }":
 topics: []
 via:
 ---

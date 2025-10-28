@@ -11,7 +11,5 @@ people:
   - "[[Steph Ango]]"
 topics:
   - "[[Emergence]]"
-tags:
-  - meetings
 ---
 - Discussed the book [[Out of Control]] on the topic of [[Emergence]]

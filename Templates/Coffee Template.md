@@ -1,14 +1,11 @@
 ---
 categories:
   - "[[Coffee]]"
-maker: 
-producer: 
+maker:
+producer:
 country: []
-variety: 
-process: 
-rating: 
-last: 
-tags:
-  - coffee
-  - references
+variety:
+process:
+rating:
+last:
 ---

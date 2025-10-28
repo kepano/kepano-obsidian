@@ -1,6 +1,5 @@
 ---
 tags:
-  - music
   - categories
 ---
 

@@ -1,14 +1,11 @@
 ---
 categories:
   - "[[Games]]"
-maker: 
+maker:
 genre: []
-year: 
-system: 
-rating: 
+year:
+system:
+rating:
 created: {{date}}
 last: {{date}}
-tags:
-  - games
-  - references
 ---

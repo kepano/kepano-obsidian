@@ -12,9 +12,6 @@ rating: 7
 year: 1982
 last: 2023-09-14
 imdbId: tt0083658
-tags:
-  - movies
-  - references
 ---
 
 

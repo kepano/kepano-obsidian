@@ -1,10 +1,6 @@
 ---
 categories:
   - "[[Albums]]"
-tags:
-  - music
-  - albums
-  - references
 genre:
   - "[[Jazz]]"
 artist: "[[Paul Chambers]]"

@@ -2,11 +2,10 @@
 categories:
   - "[[Meetings]]"
 type: []
-date: {{date}}
-org: 
-loc: 
+date:
+  "{ date }":
+org:
+loc:
 people: []
 topics: []
-tags:
-  - meetings
 ---

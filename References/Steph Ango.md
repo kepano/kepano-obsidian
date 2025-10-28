@@ -1,9 +1,8 @@
 ---
 categories:
   - "[[People]]"
-tags:
-  - people
-  - authors
+type:
+  - "[[Authors]]"
 org:
   - "[[Obsidian]]"
 created: 2023-09-12

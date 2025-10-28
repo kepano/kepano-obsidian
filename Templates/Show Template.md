@@ -2,12 +2,9 @@
 categories:
   - "[[Shows]]"
 genre: []
-year: 
+year:
 cast: []
-rating: 
+rating:
 created: {{date}}
 last: {{date}}
-tags:
-  - shows
-  - references
 ---

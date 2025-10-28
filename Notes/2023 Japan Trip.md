@@ -6,7 +6,5 @@ end: 2023-09-30
 loc:
   - "[[Kyoto]]"
   - "[[Japan]]"
-tags:
-  - trips
 ---
 

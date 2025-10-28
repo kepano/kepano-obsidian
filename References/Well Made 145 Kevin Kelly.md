@@ -1,9 +1,6 @@
 ---
 categories:
   - "[[Podcast episodes]]"
-tags:
-  - podcast
-  - episodes
 show: "[[Well Made]]"
 guests:
   - "[[Kevin Kelly]]"

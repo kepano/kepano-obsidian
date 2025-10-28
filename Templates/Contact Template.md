@@ -1,9 +1,7 @@
 ---
 categories:
   - "[[People]]"
-tags:
-  - people
-phone: 
-twitter: 
+phone:
+twitter:
 org:
 ---

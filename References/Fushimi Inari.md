@@ -1,8 +1,6 @@
 ---
 categories:
   - "[[Places]]"
-tags:
-  - places
 type:
   - "[[Parks]]"
   - "[[Shrines]]"

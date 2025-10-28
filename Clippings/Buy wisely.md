@@ -7,8 +7,6 @@ author:
 source: https://stephango.com/buy-wisely
 clipped: 2023-11-18
 published: 2023-09-29
-tags:
-  - posts
 status:
   - "[[Published]]"
 topics:

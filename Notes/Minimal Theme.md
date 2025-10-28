@@ -6,8 +6,6 @@ type:
 org:
   - "[[Obsidian]]"
 year: 2020
-tags:
-  - projects
 url: https://minimal.guide
 status:
   - "[[Active]]"

@@ -5,14 +5,11 @@ categories:
 author:
   - "[[Steph Ango]]"
 url: https://stephango.com/in-good-hands
-tags:
-  - clippings
-  - advice
 created: 2023-09-12
 published: 2023-08-06
-topics: 
 status:
   - "[[Published]]"
+topics:
 ---
 
 There is a feeling I search for: *being in good hands*. It is the feeling I look to give and the feeling I look to receive.

@@ -11,7 +11,6 @@ topics:
   - "[[Evergreen]]"
 tags:
   - 0🌲
-  - clippings
 status:
   - "[[Published]]"
 ---

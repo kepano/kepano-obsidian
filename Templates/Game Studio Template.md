@@ -1,8 +1,8 @@
 ---
 categories:
   - "[[Companies]]"
-tags:
-  - companies
+type:
+  - "[[Game studios]]"
 ---
 
 ## Games

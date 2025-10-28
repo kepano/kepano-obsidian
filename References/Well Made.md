@@ -3,9 +3,7 @@ categories:
   - "[[Podcasts]]"
 host:
   - "[[Steph Ango]]"
-rating: 
-tags:
-  - podcast
+rating:
 ---
 ## Episodes
 

@@ -11,8 +11,5 @@ year:
 last: {{date}}
 imdbId:
 via:
-tags:
-  - movies
-  - references
 ---
 

@@ -1,11 +1,9 @@
 ---
 categories:
   - "[[Places]]"
-tags:
-  - places
 type: []
 loc: []
-rating: 
+rating:
 created: {{date}}
 last: {{date}}
 ---

@@ -1,10 +1,8 @@
 ---
 categories:
   - "[[Trips]]"
-start: 
-end: 
-loc: 
-tags:
-  - trips
+start:
+end:
+loc:
 ---
 

@@ -3,15 +3,12 @@ categories:
   - "[[Meetings]]"
 type:
   - "[[Job Interviews]]"
-org: 
+org:
 people: []
-date: {{date}}
-role: 
-rating: 
-tags:
-  - jobs
-  - meetings/job
-  - meetings
+date:
+  "{ date }":
+role:
+rating:
 ---
 ## Questions and topics
 

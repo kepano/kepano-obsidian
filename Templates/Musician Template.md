@@ -1,8 +1,7 @@
 ---
 categories: "[[People]]"
-tags:
-  - people
-  - musicians
+type:
+  - "[[Musicians]]"
 created: {{date}}
 ---
 ## Albums

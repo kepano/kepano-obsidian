@@ -16,8 +16,6 @@ rating: 7
 published: 2023-07-30
 created: 2023-09-12
 last: 2023-09-12
-tags:
-  - recipes
 ---
 It seems like every summer I have the impromptu and magical experience of suddenly smelling the delicate aroma of ripe nectarines wafting through the air. At that moment, whether it's at a farmer's market or grocery store, I know it's time to make this recipe.
 

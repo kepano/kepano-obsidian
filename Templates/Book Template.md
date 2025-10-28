@@ -14,7 +14,5 @@ created: {{date}}
 last:
 via: ""
 tags:
-  - books
-  - references
   - to-read
 ---

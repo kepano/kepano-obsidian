@@ -1,11 +1,9 @@
 ---
 categories:
   - "[[Hosting]]"
-start: 
-end: 
-loc: 
+start:
+end:
+loc:
 people: []
-tags:
-  - hosting
 ---
 

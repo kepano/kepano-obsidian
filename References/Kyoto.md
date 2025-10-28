@@ -3,9 +3,6 @@ categories:
   - "[[Places]]"
 type:
   - "[[Cities]]"
-tags:
-  - places
-  - cities
 loc:
   - "[[Japan]]"
 coordinates:

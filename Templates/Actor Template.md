@@ -1,8 +1,7 @@
 ---
 categories: "[[People]]"
-tags:
-  - people
-  - actors
+type:
+  - "[[Actors]]"
 ---
 ## Movies
 

@@ -1,8 +1,7 @@
 ---
 categories: "[[People]]"
-tags:
-  - people
-  - authors
+type:
+  - "[[Authors]]"
 ---
 ## Books
 

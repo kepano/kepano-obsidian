@@ -1,9 +1,8 @@
 ---
 categories:
   - "[[People]]"
-tags:
-  - people
-  - directors
+type:
+  - "[[Directors]]"
 created: {{date}}
 ---
 ## Movies

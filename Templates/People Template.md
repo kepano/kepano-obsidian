@@ -1,9 +1,7 @@
 ---
 categories:
   - "[[People]]"
-tags:
-  - people
-birthday: 
+birthday:
 org: []
 created: {{date}}
 ---

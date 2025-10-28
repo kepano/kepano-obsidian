@@ -3,11 +3,9 @@ categories:
   - "[[Projects]]"
 type: []
 org: []
-start: 
-year: 
-tags:
-  - projects
-url: 
+start:
+year:
+url:
 status:
 ---
 

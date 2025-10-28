@@ -3,13 +3,10 @@ categories:
   - "[[Places]]"
 type:
   - "[[Cities]]"
-tags:
-  - places
-  - cities
-loc: 
-rating: 
+loc:
+rating:
 created: {{date}}
-last: 
+last:
 coordinates:
   - "35.021041"
   - "135.7556075"

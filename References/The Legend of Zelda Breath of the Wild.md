@@ -10,7 +10,4 @@ aliases:
 last: "[[2022-04]]"
 rating: 7
 year: 2017
-tags:
-  - games
-  - references
 ---

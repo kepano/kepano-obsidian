@@ -1,17 +1,15 @@
 ---
 categories:
-  - "[[Real estate]]"
-tags:
-  - places
+  - "[[Places]]"
 type: []
-address: 
-rating: 
+address:
+rating:
 created: {{date}}
-url: 
-year: 
-price: 
-sqft: 
-lotsqft: 
+url:
+year:
+price:
+sqft:
+lotsqft:
 loc: []
 status:
 ---

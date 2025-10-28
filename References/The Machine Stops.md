@@ -3,7 +3,7 @@ categories:
   - "[[Books]]"
 author:
   - "[[E. M. Forster]]"
-cover: 
+cover:
 genre:
   - "[[Sci-fi]]"
 year: 1909
@@ -13,8 +13,6 @@ topics:
 created: 2023-09-12
 last: 2023-09-12
 tags:
-  - books
-  - references
   - to-read
 ---
 

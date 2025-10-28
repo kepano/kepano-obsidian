@@ -1,12 +1,9 @@
 ---
 categories:
   - "[[Food]]"
-tags:
-  - food
-  - references
-maker: 
-rating: 
-price: 
+maker:
+rating:
+price:
 last: {{date}}
 created: {{date}}
 ---

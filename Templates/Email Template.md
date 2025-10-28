@@ -1,11 +1,10 @@
 ---
 categories:
   - "[[Emails]]"
-created: {{date}}
-tags:
-  - emails
+created:
+  "{ date }":
 org: []
 people: []
-url: 
+url:
 topics:
 ---
