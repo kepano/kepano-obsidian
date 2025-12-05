@@ -4,8 +4,7 @@ categories:
 genre: []
 artist: ""
 year:
-created:
-  "{ date }":
+created: {{date}}
 rating:
 ---
 
