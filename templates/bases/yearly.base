@@ -11,7 +11,7 @@ views:
     filters:
       and:
         - file.folder == "files"
-        - created.year == this.year
+        - created.year == number(this.file.name)
     order:
       - created
       - file.name
