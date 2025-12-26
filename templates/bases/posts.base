@@ -1,0 +1,25 @@
+properties:
+  file.name:
+    displayName: Title
+  author:
+    displayName: Author
+  topics:
+    displayName: Topics
+views:
+  - type: table
+    name: All
+    filters:
+      and:
+        - list(categories).contains(link("posts"))
+        - '!file.name.contains("Template")'
+    order:
+      - file.name
+      - author
+      - topics
+    sort:
+      - property: created
+        direction: DESC
+    columnSize:
+      file.name: 214
+      note.author: 133
+      note.topics: 130
