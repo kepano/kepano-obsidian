@@ -9,7 +9,7 @@ I wanted to get started with Obsidian and discovered Steph Ango's [blog](https:/
 
 ## Why do I fork and adapt?
 
-I really like the fascinating philosophy behind. However, I also found the original vault was a bit too complex and overwhelming for a beginner, at least for me.
+I really like the fascinating philosophy behind. However, I also found the original vault was a bit complex and overwhelming for a beginner, at least for me.
 
 So, this repository is a **simplified version** that I customized to fit my preferences (e.g., folder structure, snake_case naming). I highly recommend reading the original blog post and watching the video to understand the "Why" first. Then, you can start with the original or use this simplified version as a lighter starting point.
 
