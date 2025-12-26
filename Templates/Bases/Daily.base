@@ -1,69 +1,21 @@
-filters:
-  or:
-    - file.name.contains(this.file.name)
-    - created.toString().contains(this.file.name)
-    - start.toString().contains(this.file.name)
-    - end.toString().contains(this.file.name)
-    - file.links.contains(this.file)
 properties:
   file.name:
-    displayName: Entry
-  note.categories:
-    displayName: Categories
+    displayName: Date
   note.created:
     displayName: Created
-  note.tags:
-    displayName: Tags
 views:
   - type: table
-    name: Daily notes
+    name: Daily Notes
     filters:
       and:
-        - '!tags.contains("daily")'
-        - '!tags.contains("monthly")'
+        - list(categories).contains(link("daily"))
+        - '!file.name.contains("Template")'
     order:
       - file.name
       - created
-      - categories
-      - tags
     sort:
-      - property: tags
-        direction: ASC
-      - property: created
-        direction: DESC
       - property: file.name
-        direction: ASC
-      - property: categories
-        direction: ASC
+        direction: DESC
     columnSize:
-      file.name: 287
-      note.created: 128
-      note.categories: 119
-  - type: table
-    name: Monthly
-    filters:
-      and:
-        - '!tags.contains("daily")'
-        - '!tags.contains("monthly")'
-    order:
-      - file.name
-      - categories
-      - created
-    sort:
-      - property: file.name
-        direction: ASC
-      - property: created
-        direction: DESC
-  - type: table
-    name: Yearly
-    filters:
-      and:
-        - '!tags.contains("daily")'
-        - '!tags.contains("monthly")'
-    order:
-      - file.name
-      - categories
-      - created
-    sort:
-      - property: created
-        direction: ASC
+      file.name: 200
+      note.created: 150

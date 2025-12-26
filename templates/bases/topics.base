@@ -7,22 +7,22 @@ properties:
     displayName: Categories
   author:
     displayName: Author
-  topics:
-    displayName: Topics
 views:
   - type: table
-    name: Backlinks
+    name: All
     filters:
       and:
-        - file.hasLink(this)
+        - list(topics).contains(link(this.file.path))
     order:
       - created
       - file.name
       - categories
       - author
-      - topics
     sort:
       - property: created
         direction: DESC
     columnSize:
-      file.name: 205
+      created: 150
+      file.name: 300
+      categories: 120
+      author: 120

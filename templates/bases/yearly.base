@@ -1,0 +1,25 @@
+properties:
+  file.name:
+    displayName: File
+  note.created:
+    displayName: Date
+  note.status:
+    displayName: Status
+views:
+  - type: table
+    name: Yearly Archive
+    filters:
+      and:
+        - file.folder == "files"
+        - created.year == this.year
+    order:
+      - created
+      - file.name
+      - status
+    sort:
+      - property: created
+        direction: DESC
+    columnSize:
+      note.created: 150
+      file.name: 400
+      note.status: 100

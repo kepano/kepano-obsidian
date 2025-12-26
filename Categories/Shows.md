@@ -1,6 +1,0 @@
----
-tags:
-  - categories
----
-
-![[Shows.base]]

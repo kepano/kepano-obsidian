@@ -1,10 +1,8 @@
 properties:
   file.name:
     displayName: Title
-  created:
-    displayName: Created
-  status:
-    displayName: Status
+  author:
+    displayName: Author
   topics:
     displayName: Topics
 views:
@@ -12,15 +10,16 @@ views:
     name: All
     filters:
       and:
-        - list(categories).contains(link("posts"))
+        - list(categories).contains(link("notes"))
         - '!file.name.contains("Template")'
     order:
       - file.name
-      - created
-      - status
+      - author
       - topics
     sort:
       - property: created
         direction: DESC
-      - property: status
-        direction: ASC
+    columnSize:
+      file.name: 214
+      note.author: 133
+      note.topics: 130
