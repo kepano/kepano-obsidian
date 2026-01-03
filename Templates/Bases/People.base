@@ -1,7 +1,7 @@
 filters:
   and:
     - '!file.name.contains("Template")'
-    - note.tags.contains("people")
+    - categories.contains(link("People"))
 formulas:
   Age: (now() - birthday).years.floor()
 properties:
@@ -19,15 +19,15 @@ views:
       - tags
       - birthday
       - formula.Age
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: tags
+        direction: ASC
+      - property: formula.Age
+        direction: DESC
+      - property: birthday
+        direction: DESC
     columnSize:
       note.tags: 209
       formula.Age: 99
-    sort:
-      - column: file.name
-        direction: ASC
-      - column: note.tags
-        direction: ASC
-      - column: formula.Age
-        direction: DESC
-      - column: note.birthday
-        direction: DESC
