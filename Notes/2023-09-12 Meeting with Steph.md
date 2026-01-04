@@ -2,7 +2,7 @@
 categories:
   - "[[Meetings]]"
 type: []
-date: 2023-09-14
+date: 2023-09-12
 org:
   - "[[Obsidian]]"
 loc:
