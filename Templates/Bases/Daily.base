@@ -19,8 +19,9 @@ views:
     name: Daily notes
     filters:
       and:
-        - '!tags.contains("daily")'
-        - '!tags.contains("monthly")'
+        - '!file.tags.contains("daily")'
+        - '!file.tags.contains("monthly")'
+        - file.name != this.file.name
     order:
       - file.name
       - created
@@ -43,8 +44,9 @@ views:
     name: Monthly
     filters:
       and:
-        - '!tags.contains("daily")'
-        - '!tags.contains("monthly")'
+        - '!file.tags.contains("daily")'
+        - '!file.tags.contains("monthly")'
+        - file.name != this.file.name
     order:
       - file.name
       - categories
@@ -58,8 +60,9 @@ views:
     name: Yearly
     filters:
       and:
-        - '!tags.contains("daily")'
-        - '!tags.contains("monthly")'
+        - '!file.tags.contains("daily")'
+        - '!file.tags.contains("monthly")'
+        - file.name != this.file.name
     order:
       - file.name
       - categories
