@@ -50,6 +50,10 @@
     "monthly-uses": "number",
     "runtime": "number",
     "pages": "number",
-    "acquired": "date"
+    "acquired": "date",
+    "value": "number",
+    "close": "date",
+    "deal": "multitext",
+    "company": "multitext"
   }
 }

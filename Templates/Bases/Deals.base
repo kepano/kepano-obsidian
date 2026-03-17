@@ -1,0 +1,117 @@
+filters:
+  and:
+    - categories.contains(link("Deals"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Deal
+  note.company:
+    displayName: Company
+  note.people:
+    displayName: People
+  note.value:
+    displayName: Value
+  note.status:
+    displayName: Status
+  note.type:
+    displayName: Type
+  note.start:
+    displayName: Started
+  note.close:
+    displayName: Close date
+views:
+  - type: table
+    name: Deals
+    order:
+      - file.name
+      - company
+      - status
+      - value
+      - people
+      - close
+      - start
+      - type
+    sort:
+      - property: close
+        direction: ASC
+      - property: value
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 220
+      note.company: 160
+      note.status: 130
+      note.value: 90
+      note.close: 112
+  - type: table
+    name: Pipeline
+    filters:
+      and:
+        - '!note.status.contains("closed-won")'
+        - '!note.status.contains("closed-lost")'
+    order:
+      - file.name
+      - company
+      - status
+      - value
+      - people
+      - close
+      - type
+    sort:
+      - property: close
+        direction: ASC
+      - property: value
+        direction: DESC
+    columnSize:
+      file.name: 220
+      note.company: 160
+      note.status: 130
+      note.value: 90
+      note.close: 112
+  - type: table
+    name: Company
+    filters:
+      and:
+        - list(company).contains(this)
+    order:
+      - file.name
+      - status
+      - value
+      - people
+      - close
+      - start
+      - type
+    sort:
+      - property: close
+        direction: ASC
+      - property: value
+        direction: DESC
+    columnSize:
+      file.name: 220
+      note.status: 130
+      note.value: 90
+      note.close: 112
+  - type: table
+    name: Status
+    filters:
+      and:
+        - list(status).contains(this)
+    order:
+      - file.name
+      - company
+      - value
+      - people
+      - close
+      - start
+      - type
+    sort:
+      - property: close
+        direction: ASC
+      - property: value
+        direction: DESC
+    columnSize:
+      file.name: 220
+      note.company: 160
+      note.value: 90
+      note.close: 112
