@@ -13,6 +13,8 @@ topics: []
 created: {{date}}
 last:
 via: ""
+based-on: []
+original-author: []
 tags:
   - to-read
 ---

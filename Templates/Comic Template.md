@@ -1,12 +1,17 @@
 ---
 categories:
-  - "[[Shows]]"
+  - "[[Comics]]"
+author: []
+cover:
 genre: []
 year:
-cast: []
 rating:
+topics: []
 created: {{date}}
-last: {{date}}
+last:
+via: ""
 based-on: []
 original-author: []
+tags:
+  - to-read
 ---
