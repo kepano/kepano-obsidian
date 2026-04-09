@@ -11,6 +11,12 @@ properties:
     displayName: Year
   note.genre:
     displayName: Genre
+  note.rating:
+    displayName: Rating
+  note.topics:
+    displayName: Topics
+  note.last:
+    displayName: Last Read
 views:
   - type: table
     name: Comics
