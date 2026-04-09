@@ -51,7 +51,7 @@
     "runtime": "number",
     "pages": "number",
     "acquired": "date",
-    "basedOn": "multitext",
-    "originalAuthor": "multitext"
+    "based-on": "multitext",
+    "original-author": "multitext"
   }
 }

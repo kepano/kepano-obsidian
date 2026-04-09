@@ -11,7 +11,7 @@ year:
 last: {{date}}
 imdbId:
 via:
-basedOn: []
-originalAuthor: []
+based-on: []
+original-author: []
 ---
 
