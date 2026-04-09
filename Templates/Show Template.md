@@ -7,4 +7,6 @@ cast: []
 rating:
 created: {{date}}
 last: {{date}}
+basedOn: []
+originalAuthor: []
 ---

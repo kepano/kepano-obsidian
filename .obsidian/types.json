@@ -50,6 +50,8 @@
     "monthly-uses": "number",
     "runtime": "number",
     "pages": "number",
-    "acquired": "date"
+    "acquired": "date",
+    "basedOn": "multitext",
+    "originalAuthor": "multitext"
   }
 }

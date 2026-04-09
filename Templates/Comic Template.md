@@ -1,20 +1,15 @@
 ---
 categories:
-  - "[[Books]]"
+  - "[[Comics]]"
 author: []
 cover:
 genre: []
-pages:
-isbn:
-isbn13:
 year:
 rating:
 topics: []
 created: {{date}}
 last:
 via: ""
-basedOn: []
-originalAuthor: []
 tags:
   - to-read
 ---

@@ -1,0 +1,60 @@
+filters:
+  and:
+    - note.categories.contains(link("Songs"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Song
+  note.artist:
+    displayName: Artist
+  note.album:
+    displayName: Album
+  note.year:
+    displayName: Year
+  note.genre:
+    displayName: Genre
+  note.rating:
+    displayName: Rating
+views:
+  - type: table
+    name: Songs
+    order:
+      - file.name
+      - artist
+      - album
+      - rating
+      - year
+      - genre
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Artist
+    filters:
+      and:
+        - list(artist).contains(this)
+    order:
+      - file.name
+      - album
+      - rating
+      - year
+      - genre
+  - type: table
+    name: Album
+    filters:
+      and:
+        - list(album).contains(this)
+    order:
+      - file.name
+      - artist
+      - rating
+  - type: table
+    name: Genre
+    filters:
+      and:
+        - list(genre).contains(this)
+    order:
+      - file.name
+      - artist
+      - rating
+      - year

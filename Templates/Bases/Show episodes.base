@@ -1,0 +1,49 @@
+filters:
+  and:
+    - note.categories.contains(link("Show episodes"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Episode
+  note.show:
+    displayName: Show
+  note.season:
+    displayName: Season
+  note.episode:
+    displayName: Episode #
+  note.rating:
+    displayName: Rating
+  note.published:
+    displayName: Published
+views:
+  - type: table
+    name: All episodes
+    order:
+      - file.name
+      - show
+      - season
+      - episode
+      - rating
+      - published
+    sort:
+      - property: published
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Show
+    filters:
+      and:
+        - list(show).contains(this)
+    order:
+      - file.name
+      - show
+      - season
+      - episode
+      - rating
+      - published
+    sort:
+      - property: season
+        direction: ASC
+      - property: episode
+        direction: ASC
