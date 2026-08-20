@@ -19,7 +19,7 @@ tags: [vault]
 
 ## Finance
 
-(none yet)
+- [[Dehradun House Sale]]
 
 ## Home
 
@@ -34,6 +34,14 @@ tags: [vault]
 
 - [[MNREC (NIT Allahabad)]]
 
+## Friends
+
+- [[Santosh Gupta]]
+- [[Vishal Seth]]
+- [[Sunil Verma]]
+- [[Jeetendra Falodia]]
+- [[Aniket Gawade]]
+
 ## Travel
 
-(none yet)
+- [[India Trip - Dehradun (Sep-Oct 2026)]]

@@ -17,3 +17,4 @@ Colleague on the [[EWOK]] team at [[Intuit]], works on [[Disaster Recovery (DR)]
 ## Interactions
 
 - 2026-08-15 — noted as a weekly pickleball partner at work.
+- 2026-08-15 — played pickleball with Praneet, [[Archana Kataria]], and [[Akshay Pratinav]], 11:30 AM–12:30 PM.

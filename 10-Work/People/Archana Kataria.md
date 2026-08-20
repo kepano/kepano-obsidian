@@ -16,4 +16,4 @@ Praneet's manager on the [[EWOK]] team at [[Intuit]].
 
 ## Interactions
 
-(none logged yet)
+- 2026-08-15 — played pickleball with Praneet, [[Garvit Kataria]], and [[Akshay Pratinav]], 11:30 AM–12:30 PM.

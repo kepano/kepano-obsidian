@@ -23,7 +23,7 @@
   "workspaces": true,
   "file-recovery": true,
   "publish": false,
-  "sync": false,
+  "sync": true,
   "canvas": true,
   "properties": false,
   "bookmarks": true,

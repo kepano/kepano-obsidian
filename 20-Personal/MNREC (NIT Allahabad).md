@@ -32,19 +32,19 @@ Established in 1961 as one of India's seventeen Regional Engineering Colleges, a
 | Avoy Nanda | +1 (408) 839-5019 |
 | Mudit Agarwal | +1 (415) 378-7371 |
 | Shweta Agarwal | +1 (650) 906-5991 |
-| Jitu Falodia | +1 (425) 985-1416 |
+| [[Jeetendra Falodia\|Jitu Falodia]] | +1 (425) 985-1416 |
 | Nitin Gautam | +1 (206) 351-5118 |
 | Rajesh M | +1 (408) 623-7100 |
 | Pata Anjanyelu | +1 (408) 505-9697 |
 | Balaji Pichai | +1 (408) 655-7154 |
-| Vishal Seth | +1 (408) 799-7483 |
+| [[Vishal Seth]] | +1 (408) 799-7483 |
 | Jitendra Verma | +1 (408) 480-4252 |
 | Atul Agarwal | +1 (360) 713-1112 |
 | Siddharth | +1 (925) 727-7251 |
 | Manoj Kumar | +1 (269) 769-8295 |
 | Kishore (Mnrec) | +1 (507) 319-6924 |
 | Rajni | +1 (408) 624-0482 |
-| Sunil Verma | +1 (650) 861-9963 |
+| [[Sunil Verma]] | +1 (650) 861-9963 |
 
 ## Contacts — USA, outside Bay Area
 

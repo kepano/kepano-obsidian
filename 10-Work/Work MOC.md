@@ -18,6 +18,7 @@ tags: [vault]
 - [[Sahil Sabharwal]]
 - [[Susrut Hajirnis]]
 - [[Chaithanya Bhatt]]
+- [[Akshay Pratinav]]
 
 ## Meetings
 
@@ -27,3 +28,6 @@ tags: [vault]
 
 - [[Intuit]]
 - [[EWOK]]
+- [[Palo Alto Networks]]
+- [[Selector Software]]
+- [[Juniper Networks]]

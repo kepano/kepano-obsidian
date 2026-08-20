@@ -23,6 +23,7 @@ Software engineer based in Fremont, CA. Works at [[Intuit]] on cloud technologie
 - Into [[Fitness]] — plays pickleball and swims every week.
 - Interests: [[AI Applications]], [[Coding]], [[Movies]], [[Music]] (guitar and violin), [[Kombucha & Salgam]] (home brewing), [[Sourdough Bread (Recipe)|sourdough baking]], and cocktail-making.
 - Studied at [[MNREC (NIT Allahabad)]].
+- Prior employers: [[Palo Alto Networks]], [[Selector Software]], [[Juniper Networks]].
 - Personal cell: +1 (408) 916-8207.
 - Keeps a daily journal in `40-Journal/`.
 - Tracks restaurant visits in `20-Personal/Dining/` — one note per visit, receipt attached, dining companions linked.
