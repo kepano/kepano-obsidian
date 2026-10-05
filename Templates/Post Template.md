@@ -4,7 +4,7 @@ categories:
 author:
   - "[[Me]]"
 url:
-created: {{date}}
+created:
 published:
 topics: []
 status:

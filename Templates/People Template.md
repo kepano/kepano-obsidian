@@ -3,7 +3,7 @@ categories:
   - "[[People]]"
 birthday:
 org: []
-created: {{date}}
+created:
 ---
 ## Meetings
 

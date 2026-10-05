@@ -7,8 +7,8 @@ ingredients:
 author: []
 url:
 rating:
-created: {{date}}
-last: {{date}}
+created:
+last:
 ---
 ## Ingredients
 

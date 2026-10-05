@@ -5,6 +5,6 @@ genre: []
 year:
 cast: []
 rating:
-created: {{date}}
-last: {{date}}
+created:
+last:
 ---

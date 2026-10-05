@@ -4,6 +4,6 @@ categories:
 type: []
 loc: []
 rating:
-created: {{date}}
-last: {{date}}
+created:
+last:
 ---

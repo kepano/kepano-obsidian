@@ -1,7 +1,7 @@
 ---
 categories:
   - "[[Emails]]"
-created: {{date}}
+created:
 org: []
 people: []
 url:

@@ -11,5 +11,5 @@ episode:
 url: 
 rating: 
 published: 
-last: {{date}}
+last:
 ---

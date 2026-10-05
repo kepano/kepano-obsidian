@@ -5,7 +5,7 @@ conference:
 speaker: 
 topics: []
 rating: 
-last: {{date}}
+last:
 tags:
   - conferences
   - sessions
