@@ -15,8 +15,6 @@ properties:
     displayName: Rating
   note.published:
     displayName: Published
-  note.guest:
-    displayName: Guest
 views:
   - type: table
     name: All episodes
@@ -41,12 +39,12 @@ views:
       - episode
       - rating
       - published
-      - guest
+      - guests
   - type: table
     name: Guest
     filters:
       and:
-        - list(guest).contains(this)
+        - list(guests).contains(this)
     order:
       - file.name
       - show
